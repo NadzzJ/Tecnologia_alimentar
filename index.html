@@ -9,24 +9,41 @@
 .logo-school{width:clamp(56px,13vw,110px);flex:none}
 .logo-funding{width:min(100%,709px);min-width:0;flex:0 1 709px}
 .hero h1{font-size:clamp(2.15rem,5.1vw,4.4rem);letter-spacing:-.045em}.hero-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:1rem}
+
+:root{--ink:#392a20;--green:#71432c;--cream:#f8f1e5;--line:#d9c7b2}
+header{background:#efe2d0;color:#392a20}
+.top{border-bottom-color:#d6bda4}
+.course-meta{margin:.3rem 0 0;font-size:.94rem;line-height:1.45}
+.hero{padding-block:clamp(2rem,5vw,3.5rem)}
+.hero-photo{border-radius:0;aspect-ratio:3/2;max-height:none;mask-image:linear-gradient(to right, transparent, #000 15%, #000 85%, transparent),linear-gradient(to bottom, transparent, #000 16%, #000 84%, transparent);mask-composite:intersect}
+.pill{background:#dbc0a4;color:#392a20}
+.card{background:#fffaf2}.work{background:#eee1cf}.curio{background:#f2dfc6}
+.legend button[aria-pressed=true],button:hover{background:#edddc8}
+footer{background:#ece0cf}
+.lab>summary{font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.2}
+.lab:not([open])>summary{margin-bottom:0}
 </style></head><body>
 <div class="logo-strip" aria-label="Identidade institucional e cofinanciamento">
 <div class="wrap">
 <img class="logo-school" src="./logos/agrupamento-transparente.png" alt="Agrupamento de Escolas Marcelino Mesquita do Cartaxo">
 <img class="logo-funding" src="./logos/cofinanciamento-transparente.png" alt="Pessoas 2030, Portugal 2030 e Cofinanciado pela União Europeia">
 </div></div>
-<header><div class="wrap"><div class="top"><strong>Tecnologia Alimentar · UC00596</strong><a href="#laboratorio">Laboratório interativo ↓</a></div><div class="hero"><div><div class="kicker">Cozinha pedagógica</div><h1>Implementar os princípios de nutrição e dietética</h1><p>Nutrição e dietética na cozinha. Descobre o que os alimentos fornecem, interpreta rótulos e transforma as tuas escolhas numa ementa.</p><p><strong>Curso Profissional de Cozinha e Restauração</strong><br>Docente: Nadine Jeremias<br>Ano letivo: 2026/2027</p><div class="actions"><a class="pill" href="#aulas">Explorar as aulas ↓</a><a class="pill" href="./planificacao.html">Planificação resumida</a></div></div>
-<img class="hero-photo" src="./nutricao-dietetica.webp" alt="Refeição mediterrânica com peixe grelhado, grão, arroz integral, hortícolas, fruta e água"></div></div></header>
+<header><div class="wrap"><div class="top"><div><strong>Tecnologia Alimentar · UC00596</strong><p class="course-meta"><strong>Curso Profissional de Cozinha e Restauração</strong><br>Docente: Nadine Jeremias<br>Ano letivo: 2026/2027</p></div><a href="#laboratorio">Laboratório interativo ↓</a></div><div class="hero"><div><div class="kicker">Cozinha pedagógica</div><h1>Implementar os princípios de nutrição e dietética</h1><p>Nutrição e dietética na cozinha. Descobre o que os alimentos fornecem, interpreta rótulos e transforma as tuas escolhas numa ementa.</p><div class="actions"><a class="pill" href="#aulas">Explorar as aulas ↓</a><a class="pill" href="./planificacao.html">Planificação resumida</a></div></div>
+<img class="hero-photo" src="./nutricao-dietetica.webp" alt="Alimentos mediterrânicos numa mesa, com peixe, hortícolas, fruta, leguminosas, cereais e azeite"></div></div></header>
 <main class="wrap"><section class="layout" id="aulas"><aside class="sidebar"><p class="kicker">Percurso da UC</p><label for="choose">Escolhe uma aula</label><select id="choose"></select><p><small>16 aulas de 90 minutos e 60 minutos de avaliação prática na aula 17.</small></p></aside><article id="lesson" aria-labelledby="lesson-title"></article></section>
-<section id="laboratorio" class="tools"><p class="kicker">Experimenta</p><h2>Laboratório interativo</h2><div class="tool-grid">
+<details id="laboratorio" class="tools lab"><summary>Laboratório interativo</summary><p class="kicker">Experimenta</p><div class="tool-grid">
 <section class="card"><h3>Roda dos Alimentos</h3><p>Seleciona um grupo. As percentagens referem-se ao peso no conjunto da alimentação diária.</p><div class="wheel"><svg id="wheel" viewBox="0 0 200 200" role="img" aria-label="Roda com sete grupos alimentares e água ao centro"></svg><div id="groups" class="legend"></div></div><p id="group-info" aria-live="polite"></p><small>Representação didática baseada na <a href="https://alimentacaosaudavel.dgs.pt/roda-dos-alimentos/">Roda dos Alimentos da DGS</a>.</small></section>
 <section class="card tool"><h3>Do rótulo à porção</h3><p>Experimenta com energia, sal, açúcares ou proteína. Mantém a mesma unidade no valor e no resultado. Os valores iniciais são fictícios.</p><label>Valor por 100 g <input id="value" type="number" min="0" step="any" value="380"></label><label>Peso da porção em gramas <input id="portion" type="number" min="0" step="any" value="30"></label><output id="result" for="value portion"></output><p><small>Valor por 100 g × peso da porção ÷ 100</small></p></section>
 <section class="card"><h3>A viagem dos alimentos</h3><p>Segue o percurso e descobre o que acontece em cada etapa.</p><div class="flow" id="flow"></div><p id="flow-info" aria-live="polite"></p></section>
 <section class="card tool"><h3>Ajusta a ficha técnica</h3><p>Calcula a quantidade de um ingrediente quando muda o número de porções.</p><label>Quantidade original em gramas <input id="mass" type="number" min="0" step="any" value="240"></label><label>Porções da ficha base <input id="base" type="number" min="1" step="1" value="4"></label><label>Porções pretendidas <input id="target" type="number" min="1" step="1" value="10"></label><output id="scaled" for="mass base target"></output></section>
-</div></section></main>
+</div></details></main>
 <footer><div class="wrap"><strong>Fontes e planificação</strong><p><a href="https://alimentacaosaudavel.dgs.pt/roda-dos-alimentos/">DGS · Roda dos Alimentos</a> · <a href="https://portfir-insa.min-saude.pt/">INSA · PortFIR</a> · <a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj?locale=pt">Informação alimentar</a> · <a href="https://eur-lex.europa.eu/eli/reg/2006/1924/oj?locale=pt">Alegações nutricionais</a> · <a href="./planificacao.html">Planificação resumida</a></p></div></footer>
 <script src="./aulas.js"></script>
 <script>
+const lab = document.querySelector('#laboratorio');
+document.querySelector('a[href="#laboratorio"]').addEventListener('click', () => {
+  lab.open = true;
+});
 const choose=document.querySelector('#choose');
 const panel=document.querySelector('#lesson');
 const fmt=new Intl.NumberFormat('pt-PT',{maximumFractionDigits:3});
