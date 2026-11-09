@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://nutricao-dietetica-uc00596.grandosprey1.chatgpt.site/ -->
+<html lang="pt-PT"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Matéria, experiências e oficinas de nutrição e dietética da UC00596."><title>Implementar os princípios de nutrição e dietética · UC00596</title>
+<style>
+:root{--ink:#182e25;--green:#194b39;--cream:#f8f4e9;--line:#ddd6c5;--orange:#f3b779}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 system-ui,sans-serif}h1,h2,h3{line-height:1.13}h1,h2{font-family:Georgia,serif}h1{font-size:clamp(3.15rem,8vw,6.7rem);letter-spacing:-.07em;margin:.18em 0}h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:.28em 0}h3{font-size:1.12rem;margin:.2em 0}.wrap{max-width:1180px;margin:auto;padding:0 clamp(1rem,4vw,3rem)}header{background:#143c2f;color:#fff5dc}header a{color:inherit}.top,.actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}.top{justify-content:space-between;padding:1rem 0;border-bottom:1px solid #ffffff45}.hero{display:grid;grid-template-columns:1.35fr 1fr;align-items:center;gap:2rem;padding:clamp(2rem,7vw,5rem) 0}.hero p{max-width:39ch}.kicker{letter-spacing:.13em;text-transform:uppercase;font-size:.76rem;font-weight:800}.hero svg{width:100%;max-height:330px}.pill,button,select,input{font:inherit}.pill,button{display:inline-block;border:1px solid var(--green);border-radius:100px;padding:.5rem .95rem;background:white;color:var(--green);cursor:pointer;text-decoration:none}.pill{background:#f6c482;color:#183126;font-weight:750}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:2rem;padding-block:2rem}.sidebar{align-self:start}.sidebar label{display:block;font-weight:bold}.sidebar select{width:100%;padding:.5rem;margin:.5rem 0;border:1px solid var(--line);border-radius:.5rem;background:white}.card{background:#fffdf8;border:1px solid var(--line);padding:clamp(1rem,4vw,2rem);border-radius:1rem;margin:1rem 0}.curio{background:#ffe7bc}.work{background:#e6efe4}.tools{border-top:1px solid var(--line);padding-block:2rem}.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.tools .card{margin:0}.wheel{display:grid;grid-template-columns:minmax(120px,1fr) 1fr;gap:1rem;align-items:center}.wheel svg{width:100%}.legend{display:grid;gap:.4rem}.legend button{text-align:left;border-radius:.45rem;padding:.3rem .55rem;font-size:.86rem}.legend button[aria-pressed=true]{background:#e3efdf;font-weight:bold}.flow{display:flex;flex-wrap:wrap;gap:.5rem}.flow button{border-radius:.5rem}.tool input{display:block;width:100%;padding:.45rem;border:1px solid #84968b;border-radius:.4rem;margin:.3rem 0 .7rem}output{font-size:1.4rem;font-weight:bold;color:var(--green)}summary{cursor:pointer;font-weight:bold}button:hover{background:#ffe7bc}button:disabled{opacity:.45;cursor:default}:focus-visible{outline:3px solid #bd621d;outline-offset:3px}footer{padding:1.5rem 0 2rem;background:#ebe5d5}footer a{color:var(--green)}@media(max-width:780px){.hero,.layout,.tool-grid{grid-template-columns:1fr}.hero svg{max-height:220px}.layout{gap:.4rem}.wheel{grid-template-columns:1fr}.wheel svg{max-height:200px}}
+/* A faixa clara mantém a legibilidade das marcas institucionais. */
+.logo-strip{background:#fffdf8;border-bottom:1px solid var(--line)}
+.logo-strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:clamp(.7rem,4vw,3rem);padding-block:.7rem}
+.logo-strip img{display:block;height:auto}
+.logo-school{width:clamp(56px,13vw,110px);flex:none}
+.logo-funding{width:min(100%,709px);min-width:0;flex:0 1 709px}
+.hero h1{font-size:clamp(2.15rem,5.1vw,4.4rem);letter-spacing:-.045em}.hero-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:1rem}
+</style></head><body>
+<div class="logo-strip" aria-label="Identidade institucional e cofinanciamento">
+<div class="wrap">
+<img class="logo-school" src="./index_files/agrupamento-transparente.png" alt="Agrupamento de Escolas Marcelino Mesquita do Cartaxo">
+<img class="logo-funding" src="./index_files/cofinanciamento-transparente.png" alt="Pessoas 2030, Portugal 2030 e Cofinanciado pela União Europeia">
+</div></div>
+<header><div class="wrap"><div class="top"><strong>Tecnologia Alimentar · UC00596</strong><a href="https://nutricao-dietetica-uc00596.grandosprey1.chatgpt.site/#laboratorio">Laboratório interativo ↓</a></div><div class="hero"><div><div class="kicker">Cozinha pedagógica · 2026/2027</div><h1>Implementar os princípios de nutrição e dietética</h1><p>Nutrição e dietética na cozinha. Descobre o que os alimentos fornecem, interpreta rótulos e transforma as tuas escolhas numa ementa.</p><a class="pill" href="https://nutricao-dietetica-uc00596.grandosprey1.chatgpt.site/#aulas">Explorar as aulas ↓</a></div>
+<img class="hero-photo" src="./index_files/nutricao-dietetica.webp" alt="Refeição mediterrânica com peixe grelhado, grão, arroz integral, hortícolas, fruta e água"></div></div></header>
+<main class="wrap"><section class="layout" id="aulas"><aside class="sidebar"><p class="kicker">Percurso da UC</p><label for="choose">Escolhe uma aula</label><select id="choose"><option value="0">01 · 21/09 · Nutrição e alimentação: diagnóstico e Roda dos Alimentos</option><option value="1">02 · 28/09 · Nutrientes e respetivas funções</option><option value="2">03 · 12/10 · Energia alimentar e balanço nutricional</option><option value="3">04 · 26/10 · Digestão e metabolismo</option><option value="4">05 · 09/11 · Roda dos Alimentos e porções</option><option value="5">06 · 16/11 · Alimentação completa, equilibrada e variada</option><option value="6">07 · 23/11 · Gorduras alimentares e métodos de confeção</option><option value="7">08 · 30/11 · Sal, açúcar e escolhas alimentares</option><option value="8">09 · 07/12 · Proteínas e substituições nutricionais</option><option value="9">10 · 14/12 · Alimentação em diferentes fases da vida</option><option value="10">11 · 04/01 · Dietética: necessidades e restrições</option><option value="11">12 · 11/01 · Rotulagem nutricional e alegações</option><option value="12">13 · 18/01 · Ementas saudáveis e sustentáveis I</option><option value="13">14 · 25/01 · Ementas saudáveis e sustentáveis II</option><option value="14">15 · 01/02 · Economia circular e desperdício alimentar</option><option value="15">16 · 15/02 · Projeto final UC00596: ementa e pré-produção</option><option value="16">17 · 22/02 · Avaliação prática de nutrição</option></select><p><small>16 aulas de 90 minutos e 60 minutos de avaliação prática na aula 17.</small></p></aside><article id="lesson" aria-labelledby="lesson-title"><p class="kicker">Aula 01 · 21/09/2026 · 90 minutos</p><h2 id="lesson-title" tabindex="-1">Nutrição e alimentação: diagnóstico e Roda dos Alimentos</h2><section class="card"><h3>Matéria</h3><p>Alimentação é escolher e consumir alimentos. Nutrição inclui a digestão, a absorção e a utilização dos nutrientes pelo organismo.</p><p>A Roda agrupa alimentos com características nutricionais semelhantes. O tamanho de cada setor orienta a proporção diária e a água ocupa o centro.</p></section><details class="card curio"><summary>Sabias que…?</summary><p>O grão é uma leguminosa e também fornece hidratos de carbono e proteína. Grupo alimentar e nutriente são classificações diferentes.</p></details><section class="card work"><h3>Na cozinha</h3><p>Jogo “monta a roda” com embalagens reais; preparar prato frio equilibrado (salada de grão, atum e hortícolas).</p></section><section class="card"><h3>Desafio de revisão</h3><p>Em que grupos da Roda colocarias o grão, o atum e a alface?</p><details><summary>Ver resposta comentada</summary><p>Leguminosas, carne/pescado/ovos e hortícolas, respetivamente.</p></details></section><div class="actions"><button id="prev" disabled="">← Aula anterior</button><button id="next">Aula seguinte →</button></div></article></section>
+<section id="laboratorio" class="tools"><p class="kicker">Experimenta</p><h2>Laboratório interativo</h2><div class="tool-grid">
+<section class="card"><h3>Roda dos Alimentos</h3><p>Seleciona um grupo. As percentagens referem-se ao peso no conjunto da alimentação diária.</p><div class="wheel"><svg id="wheel" viewBox="0 0 200 200" role="img" aria-label="Roda com sete grupos alimentares e água ao centro"><path d="M100 100 L100 9 A91 91 0 0 1 189.38813981631068 117.05169962730095 Z" fill="#dcb167" stroke="#fffdf8" stroke-width="2" opacity="1" style="cursor: pointer;"></path><path d="M100 100 L189.38813981631068 117.05169962730095 A91 91 0 0 1 94.2860627228325 190.82043228697273 Z" fill="#72a364" stroke="#fffdf8" stroke-width="2" opacity=".68" style="cursor: pointer;"></path><path d="M100 100 L94.2860627228325 190.82043228697273 A91 91 0 0 1 11.858932337294576 122.63077973200183 Z" fill="#dc765f" stroke="#fffdf8" stroke-width="2" opacity=".68" style="cursor: pointer;"></path><path d="M100 100 L11.858932337294576 122.63077973200183 A91 91 0 0 1 41.99441693286919 29.88329490740321 Z" fill="#dacaa2" stroke="#fffdf8" stroke-width="2" opacity=".68" style="cursor: pointer;"></path><path d="M100 100 L41.99441693286919 29.88329490740321 A91 91 0 0 1 66.50066570569425 15.390339784169143 Z" fill="#b87a74" stroke="#fffdf8" stroke-width="2" opacity=".68" style="cursor: pointer;"></path><path d="M100 100 L66.50066570569425 15.390339784169143 A91 91 0 0 1 88.59467574564829 9.71756218038253 Z" fill="#bd8b54" stroke="#fffdf8" stroke-width="2" opacity=".68" style="cursor: pointer;"></path><path d="M100 100 L88.59467574564829 9.71756218038253 A91 91 0 0 1 99.99999999999999 9 Z" fill="#f2cc59" stroke="#fffdf8" stroke-width="2" opacity=".68" style="cursor: pointer;"></path><circle cx="100" cy="100" r="32" fill="#d4e9ed"></circle><text x="100" y="105" text-anchor="middle" fill="#203f42" font-size="15">Água</text></svg><div id="groups" class="legend"><button aria-pressed="true">Cereais e tubérculos · 28%</button><button aria-pressed="false">Hortícolas · 23%</button><button aria-pressed="false">Fruta · 20%</button><button aria-pressed="false">Lacticínios · 18%</button><button aria-pressed="false">Carne, pescado e ovos · 5%</button><button aria-pressed="false">Leguminosas · 4%</button><button aria-pressed="false">Gorduras e óleos · 2%</button></div></div><p id="group-info" aria-live="polite">Cereais e tubérculos · 28%. Pão, arroz, massa, aveia e batata.</p><small>Representação didática baseada na <a href="https://alimentacaosaudavel.dgs.pt/roda-dos-alimentos/">Roda dos Alimentos da DGS</a>.</small></section>
+<section class="card tool"><h3>Do rótulo à porção</h3><p>Experimenta com energia, sal, açúcares ou proteína. Mantém a mesma unidade no valor e no resultado. Os valores iniciais são fictícios.</p><label>Valor por 100 g <input id="value" type="number" min="0" step="any" value="380"></label><label>Peso da porção em gramas <input id="portion" type="number" min="0" step="any" value="30"></label><output id="result" for="value portion">114</output><p><small>Valor por 100 g × peso da porção ÷ 100</small></p></section>
+<section class="card"><h3>A viagem dos alimentos</h3><p>Segue o percurso e descobre o que acontece em cada etapa.</p><div class="flow" id="flow"><button aria-pressed="true">Boca</button><button aria-pressed="false">Esófago</button><button aria-pressed="false">Estômago</button><button aria-pressed="false">Intestino delgado</button><button aria-pressed="false">Intestino grosso</button></div><p id="flow-info" aria-live="polite">Mastiga e mistura o alimento com saliva.</p></section>
+<section class="card tool"><h3>Ajusta a ficha técnica</h3><p>Calcula a quantidade de um ingrediente quando muda o número de porções.</p><label>Quantidade original em gramas <input id="mass" type="number" min="0" step="any" value="240"></label><label>Porções da ficha base <input id="base" type="number" min="1" step="1" value="4"></label><label>Porções pretendidas <input id="target" type="number" min="1" step="1" value="10"></label><output id="scaled" for="mass base target">600 g</output></section>
+</div></section></main>
+<footer><div class="wrap"><strong>Fontes e planificação</strong><p><a href="https://alimentacaosaudavel.dgs.pt/roda-dos-alimentos/">DGS · Roda dos Alimentos</a> · <a href="https://portfir-insa.min-saude.pt/">INSA · PortFIR</a> · <a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj?locale=pt">Informação alimentar</a> · <a href="https://eur-lex.europa.eu/eli/reg/2006/1924/oj?locale=pt">Alegações nutricionais</a> · <a href="https://chatgpt.com/library?file_id=libfile_219620eec8ec8191b62f20c2e13e42b0&amp;account_id=personal">Planificação diária</a></p></div></footer>
+<script>
+const lessons = [{"n":"01","d":"21/09/2026","t":"Nutrição e alimentação: diagnóstico e Roda dos Alimentos","p":"Jogo “monta a roda” com embalagens reais; preparar prato frio equilibrado (salada de grão, atum e hortícolas).","o":"Identificar grupos alimentares, proporções e função da alimentação.","q":"Em que grupos da Roda colocarias o grão, o atum e a alface?","a":"Leguminosas, carne/pescado/ovos e hortícolas, respetivamente.","m":["Alimentação é escolher e consumir alimentos. Nutrição inclui a digestão, a absorção e a utilização dos nutrientes pelo organismo.","A Roda agrupa alimentos com características nutricionais semelhantes. O tamanho de cada setor orienta a proporção diária e a água ocupa o centro.","O grão é uma leguminosa e também fornece hidratos de carbono e proteína. Grupo alimentar e nutriente são classificações diferentes."]},{"n":"02","d":"28/09/2026","t":"Nutrientes e respetivas funções","p":"Estações de alimentos: classificar fontes de proteínas, hidratos, lípidos, vitaminas e minerais; confeção de wraps integrais.","o":"Classificar nutrientes e distinguir as respetivas funções.","q":"Que ingredientes do wrap são fontes de hidratos de carbono e de proteína?","a":"A tortilha integral fornece hidratos de carbono. A fonte proteica depende do recheio escolhido.","m":["Os hidratos de carbono fornecem energia. As proteínas fornecem aminoácidos usados, por exemplo, na manutenção dos tecidos. Os lípidos também fornecem energia e ajudam a absorver vitaminas lipossolúveis.","Vitaminas e minerais participam em funções como o metabolismo e a manutenção dos ossos. A água intervém no transporte de substâncias e na regulação da temperatura.","Um wrap pode fornecer vários nutrientes ao mesmo tempo. O recheio muda o perfil nutricional mesmo com a mesma tortilha."]},{"n":"03","d":"12/10/2026","t":"Energia alimentar e balanço nutricional","p":"Comparar valores energéticos de três pequenos-almoços; confeção de papas de aveia e iogurte com fruta.","o":"Relacionar alimentos, necessidades energéticas e porções.","q":"Dois cereais têm valores diferentes por 100 g. Como comparas a energia das porções servidas?","a":"Multiplica o valor por 100 g pelo peso servido em gramas e divide por 100.","m":["A energia alimentar pode ser expressa em kJ e kcal. Para saber o valor de uma porção, multiplica o valor por 100 g pelo peso da porção e divide por 100.","O balanço energético compara a energia ingerida com a energia gasta ao longo do tempo. Para avaliar uma refeição, considera também a composição e a quantidade servida.","Num exemplo fictício, um cereal com 380 kcal por 100 g fornece 114 kcal numa porção de 30 g. Usa o simulador para confirmar."]},{"n":"04","d":"26/10/2026","t":"Digestão e metabolismo","p":"Percurso cooperativo “viagem do alimento” com cartões; preparação de creme de legumes com diferentes texturas.","o":"Descrever funções do aparelho digestivo e digestão.","q":"Por onde passa a sopa depois de a engolirmos? Ordenem os cartões.","a":"Esófago, estômago e intestino delgado. O percurso continua para o intestino grosso.","m":["Na boca, a mastigação fragmenta o alimento. O esófago transporta-o para o estômago, onde é misturado com sucos gástricos.","No intestino delgado prossegue a digestão e é absorvida grande parte dos nutrientes. No intestino grosso é absorvida parte da água restante. O metabolismo inclui as reações pelas quais o organismo transforma e utiliza substâncias.","A bílis ajuda a dispersar a gordura em pequenas gotículas. Isto facilita a atuação das enzimas que digerem os lípidos."]},{"n":"05","d":"09/11/2026","t":"Roda dos Alimentos e porções","p":"Montagem de tabuleiros de refeição em grupos com porções orientadoras; prato de leguminosas e hortícolas.","o":"Selecionar porções e justificar variedade de grupos.","q":"Se o tabuleiro já tem arroz e grão, que grupos estão representados e o que podes acrescentar?","a":"Cereais e derivados e leguminosas. Podes acrescentar hortícolas ao prato e fruta à refeição. Justifica as quantidades e prevê água.","m":["A porção é uma quantidade de referência. A quantidade que se serve pode corresponder a uma ou mais porções, consoante o alimento e o contexto.","Usa a Roda para analisar o conjunto do dia. Ao montar o tabuleiro, identifica os grupos, regista as quantidades e verifica como a refeição se encaixa no resto da ementa.","O arroz cru e o arroz cozido têm pesos diferentes para a mesma quantidade de grão inicial, porque o arroz absorve água durante a confeção."]},{"n":"06","d":"16/11/2026","t":"Alimentação completa, equilibrada e variada","p":"Desafio “reconstruir um menu”: transformar refeição desequilibrada; confeção de bowl de frango, arroz integral e legumes.","o":"Aplicar regras de alimentação saudável.","q":"Um menu tem frango e arroz integral. Como o tornas mais variado?","a":"Acrescenta hortícolas de tipos diferentes e justifica como os integras no prato.","m":["Uma alimentação completa inclui alimentos dos vários grupos e água. Uma alimentação equilibrada respeita as proporções recomendadas. Uma alimentação variada alterna alimentos dentro de cada grupo.","Aplica estes três critérios ao conjunto do menu. Na bowl, identifica o grupo do frango, do arroz integral e dos hortícolas, e pensa no que pode completar a refeição.","Alternar cenoura, couve e brócolos cria variedade dentro do mesmo grupo, o dos hortícolas."]},{"n":"07","d":"23/11/2026","t":"Gorduras alimentares e métodos de confeção","p":"Comparação de fritura simulada vs forno/air fryer com batata e hortícolas; degustação criteriosa.","o":"Selecionar técnicas de confeção para refeições saudáveis.","q":"Como comparas dois métodos de confeção sem confundir o efeito do corte com o da técnica?","a":"Usa cortes e quantidades semelhantes. Regista o método, a gordura adicionada e a textura final.","m":["As gorduras alimentares incluem ácidos gordos saturados e insaturados. O azeite e vários frutos oleaginosos são exemplos de fontes de gordura insaturada.","O método de confeção e a quantidade de gordura adicionada alteram o resultado. Para uma comparação justa, mantém semelhantes o peso, o corte e o ponto de confeção.","Uma air fryer cozinha por circulação de ar quente. Para comparar com o forno, regista também a quantidade de azeite efetivamente usada."]},{"n":"08","d":"30/11/2026","t":"Sal, açúcar e escolhas alimentares","p":"Análise de rótulos; preparar molho de tomate caseiro e bebida aromatizada sem açúcar adicionado.","o":"Identificar excessos alimentares e alternativas.","q":"Que coluna do rótulo usas para comparar dois molhos em embalagens de tamanhos diferentes?","a":"Compara o sal ou os açúcares por 100 g e calcula separadamente quanto há na porção servida.","m":["Compara o sal e os açúcares por 100 g ou 100 ml entre produtos semelhantes. Depois calcula a quantidade na porção que vais servir.","Ervas aromáticas, especiarias e acidez permitem ajustar o sabor. No molho de tomate, prova antes e depois de cada ajuste e regista o efeito.","O valor «dos quais açúcares» inclui os naturalmente presentes e os adicionados. Consulta também a lista de ingredientes."]},{"n":"09","d":"07/12/2026","t":"Proteínas e substituições nutricionais","p":"Oficina de hambúrgueres de lentilhas e de frango; discutir equivalências e limites das substituições.","o":"Selecionar alimentos nutricionalmente semelhantes.","q":"Podemos trocar a mesma massa de frango por lentilhas e assumir o mesmo teor proteico?","a":"Consulta a composição de ambos e calcula o teor na porção escolhida antes de concluir.","m":["A substituição depende do que se pretende preservar. Para comparar duas fontes de proteína, consulta dados da versão crua ou cozinhada que vais usar e calcula o valor por porção.","Ao trocar frango por lentilhas, observa também diferenças de fibra, textura e humidade. Ajusta a ficha técnica e justifica a escolha.","A comparação por 100 g ajuda a ler a composição, mas o hambúrguer servido pode pesar mais ou menos de 100 g."]},{"n":"10","d":"14/12/2026","t":"Alimentação em diferentes fases da vida","p":"Grupos recebem perfis fictícios; confeção de lanche adequado (sanduíche integral, fruta e laticínio/alternativa).","o":"Adaptar porções e opções alimentares a necessidades gerais.","q":"Que informação do perfil fictício te ajuda a dimensionar o lanche?","a":"Usa a fase da vida, a atividade prevista e as restrições fornecidas no caso.","m":["As necessidades alimentares variam com a fase da vida, a atividade e outros fatores. Para o exercício, adapta o lanche ao perfil fictício atribuído à equipa.","Escolhe alimentos e quantidades, justifica a decisão e apresenta uma opção equivalente que respeite as indicações do caso.","Duas pessoas da mesma idade podem precisar de quantidades diferentes. A idade é apenas uma das variáveis a considerar."]},{"n":"11","d":"04/01/2027","t":"Dietética: necessidades e restrições","p":"Estudo de ementas hipotéticas com alergénios e intolerâncias; preparar sobremesa de fruta sem alergénios selecionados (verificar ingredientes).","o":"Reconhecer tipos de dieta e precauções de segurança.","q":"O que verificas antes de adaptar uma sobremesa para uma restrição indicada no caso?","a":"Confirma a restrição, lê os rótulos e verifica o risco de contacto cruzado na preparação.","m":["Uma alergia alimentar envolve o sistema imunitário. A intolerância à lactose está ligada à dificuldade em digerir a lactose.","Numa adaptação de ementa, identifica a restrição descrita no caso, verifica rótulos e ingredientes compostos e avalia o contacto cruzado segundo o protocolo da escola.","Um leite sem lactose pode continuar a conter proteínas do leite. Esta distinção é importante quando se lê o rótulo para um caso de alergia."]},{"n":"12","d":"11/01/2027","t":"Rotulagem nutricional e alegações","p":"Caça ao rótulo em produtos da despensa: porção, energia, sal, açúcares e lista de ingredientes; produzir granola com ficha de ingredientes.","o":"Interpretar declaração nutricional e escolhas de compra.","q":"Onde confirmas os ingredientes e onde comparas o teor de açúcar de duas granolas?","a":"Usa a lista de ingredientes para confirmar a composição e a declaração nutricional por 100 g para comparar açúcares.","m":["A declaração nutricional indica energia e quantidades de nutrientes. A lista de ingredientes identifica os componentes usados e apresenta-os, em geral, por ordem decrescente de peso no fabrico.","As alegações nutricionais obedecem a condições. Usa a declaração por 100 g ou 100 ml para comparar e a porção para calcular a quantidade servida.","Um alimento com a alegação «sem adição de açúcares» pode conter açúcares naturalmente presentes."]},{"n":"13","d":"18/01/2027","t":"Ementas saudáveis e sustentáveis I","p":"Desenhar ementa semanal equilibrada, usando produtos sazonais; preparar sopa de época.","o":"Elaborar ementas e selecionar produtos locais e sazonais.","q":"Que critério usarias para escolher os hortícolas da sopa de época?","a":"Consulta a disponibilidade sazonal e justifica a escolha pelo aproveitamento, variedade e adequação à ementa.","m":["Uma ementa semanal articula equilíbrio, variedade, sazonalidade, orçamento e capacidade da cozinha. Planeia as refeições em conjunto para identificar repetições.","Consulta o cabaz disponível, planeia a sopa e justifica como cada hortícola contribui para a ementa e para o aproveitamento.","Uma ementa pode aproveitar o mesmo hortícola em diferentes cortes e preparações para evitar sobras de matéria-prima."]},{"n":"14","d":"25/01/2027","t":"Ementas saudáveis e sustentáveis II","p":"“Cabaz surpresa” de estação; confeção de salada morna de legumes e leguminosas aproveitando ingredientes.","o":"Integrar equilíbrio nutricional e sustentabilidade.","q":"Como integras no prato um hortícola do cabaz que sobra depois da primeira preparação?","a":"Verifica se está apto e ajusta o corte ou a confeção. Regista como o aproveitaste.","m":["Num cabaz surpresa, começa pelo inventário e pelas quantidades disponíveis. Decide que ingrediente será a base, qual dará contraste de textura e como integrar as leguminosas.","Confirma a adequação dos ingredientes à preparação, distribui as quantidades por porção e regista o que ficou por utilizar.","O mesmo hortícola pode ter um papel diferente no prato consoante o corte e o método de confeção."]},{"n":"15","d":"01/02/2027","t":"Economia circular e desperdício alimentar","p":"Auditoria de desperdícios seguros de preparação; utilizar talos aptos em creme de legumes e pão do dia anterior em croutons.","o":"Aplicar medidas de redução de desperdício com segurança.","q":"Como demonstras que a oficina reduziu o desperdício?","a":"Pesa e regista as frações aproveitáveis e descartadas. Compara as quantidades antes e depois da intervenção.","m":["Prevenir o desperdício começa nas compras, no porcionamento e na organização da produção. Na bancada, pesa separadamente as frações aptas e as descartadas.","Regista o destino de cada fração e usa apenas as partes aptas, segundo os procedimentos da cozinha. Compara os dados antes e depois da mudança.","Registar o peso das aparas permite perceber se uma alteração no corte aumentou o rendimento."]},{"n":"16","d":"15/02/2027","t":"Projeto final UC00596: ementa e pré-produção","p":"Equipas criam menu saudável de duas componentes, calculam porções e planeiam compras e tarefas.","o":"Elaborar ementa, ficha técnica e plano de produção.","q":"A ficha técnica serve quatro porções e a equipa precisa de dez. Como a adaptas?","a":"Multiplica as quantidades por 2,5 e verifica se o equipamento e o tempo permitem a produção.","m":["Uma ficha técnica reúne ingredientes, quantidades, modo de preparação, rendimento e porções. O plano de produção indica tarefas, responsáveis, equipamentos e sequência.","Para escalar uma receita, divide as porções pretendidas pelas porções da ficha base. Multiplica as quantidades pelo fator e revê os tempos, os recipientes e a capacidade dos equipamentos.","Duplicar a receita pode exigir dois tabuleiros. O tempo de confeção depende também da espessura e da carga do equipamento."]},{"n":"17","d":"22/02/2027","t":"Avaliação prática de nutrição","p":"Executar e apresentar uma componente do menu saudável e receber feedback (60 minutos da UC00596).","o":"Concluir nutrição (60 min) e identificar perigos alimentares (30 min) da nova UC.","q":"Que evidências sustentam as escolhas da equipa?","a":"A ficha técnica, as quantidades servidas e a justificação da combinação de alimentos.","m":["Na apresentação, relaciona a proposta de menu com a variedade, o equilíbrio e o aproveitamento dos ingredientes.","Mostra a ficha técnica, compara o rendimento previsto com o real e regista uma melhoria indicada na avaliação.","A pesagem das porções servidas ajuda a explicar diferenças entre o rendimento planeado e o observado."]}]
+;
+const choose=document.querySelector('#choose');
+const panel=document.querySelector('#lesson');
+const fmt=new Intl.NumberFormat('pt-PT',{maximumFractionDigits:3});
+choose.replaceChildren(...lessons.map((x,i)=>new Option(x.n+' · '+x.d.slice(0,5)+' · '+x.t,i)));
+const nutrientLesson = `
+<section class="card" aria-labelledby="nutrient-title">
+<h3 id="nutrient-title">Nutrientes e respetivas funções</h3>
+<p>Os <strong>macronutrientes</strong> são necessários em quantidades relativamente elevadas. Os <strong>micronutrientes</strong>, como as vitaminas e os minerais, são necessários em quantidades menores e desempenham funções específicas. Um alimento pode fornecer vários nutrientes ao mesmo tempo.</p>
+<details><summary>Hidratos de carbono</summary><p>Fornecem energia. Incluem açúcares e amido. O amido está presente na aveia, no pão, no arroz e na batata. A fruta e o leite contêm açúcares naturalmente presentes. No wrap, a tortilha é uma fonte de hidratos de carbono.</p></details>
+<details><summary>Proteínas</summary><p>Fornecem aminoácidos usados na construção e reparação dos tecidos e na produção de enzimas. Encontram-se no peixe, nos ovos, na carne, nos lacticínios, no tofu e nas leguminosas. No wrap, experimenta comparar recheios de frango e de grão.</p></details>
+<details><summary>Lípidos ou gorduras</summary><p>Fornecem energia, integram as membranas das células e ajudam a absorver as vitaminas A, D, E e K. Incluem gorduras saturadas e insaturadas. O azeite, os frutos oleaginosos e o peixe gordo são exemplos de fontes de gorduras insaturadas.</p></details>
+<details><summary>Vitaminas</summary><p>As vitaminas não fornecem energia. As vitaminas A, D, E e K são lipossolúveis. A vitamina C e as vitaminas do complexo B são hidrossolúveis.</p>
+<ul>
+<li><strong>A</strong> · Visão e manutenção dos tecidos. Cenoura e batata-doce fornecem precursores da vitamina A.</li>
+<li><strong>D</strong> · Absorção de cálcio. Exemplos de fontes alimentares incluem sardinha e outros peixes gordos.</li>
+<li><strong>E</strong> · Proteção antioxidante. Encontra-se em frutos oleaginosos, sementes e óleos vegetais.</li>
+<li><strong>K</strong> · Coagulação do sangue. Encontra-se em hortícolas de folha verde.</li>
+<li><strong>C</strong> · Formação de colagénio e melhor absorção do ferro de origem vegetal. Exemplos incluem citrinos, kiwi e pimento.</li>
+<li><strong>Complexo B</strong> · A B1, B2, B3, B5, B6 e B7 participam em diferentes etapas do metabolismo. A B9 (folato) é importante na divisão celular e a B12 contribui para o funcionamento do sistema nervoso e para a formação de glóbulos vermelhos. As fontes variam conforme a vitamina. Há vitaminas B nos cereais integrais, nas leguminosas e nos ovos. A B12 encontra-se naturalmente sobretudo em alimentos de origem animal e pode ser adicionada a alimentos fortificados.</li>
+</ul></details>
+<details><summary>Minerais</summary><p>Os minerais desempenham funções estruturais e reguladoras. Alguns são necessários em maior quantidade e outros em quantidades muito pequenas.</p>
+<ul>
+<li><strong>Cálcio e fósforo</strong> · Participam na formação dos ossos e dos dentes. Leite e iogurte fornecem ambos.</li>
+<li><strong>Magnésio</strong> · Participa no funcionamento muscular e em reações do metabolismo. Está presente em sementes e leguminosas.</li>
+<li><strong>Sódio, potássio e cloreto</strong> · Participam no equilíbrio de líquidos. Sódio e potássio também intervêm na transmissão nervosa. O sal de cozinha fornece sódio e cloreto. A batata e as leguminosas fornecem potássio.</li>
+<li><strong>Ferro</strong> · Integra a hemoglobina, que transporta oxigénio. Encontra-se na carne e nas leguminosas.</li>
+<li><strong>Zinco</strong> · Participa na função imunitária. Encontra-se na carne, no marisco e nas leguminosas.</li>
+<li><strong>Iodo</strong> · Necessário para produzir hormonas da tiroide. Encontra-se em pescado e no sal iodado.</li>
+<li><strong>Selénio, cobre, manganês e molibdénio</strong> · Integram ou ajudam a funcionar diferentes enzimas. Entre as fontes alimentares, conforme o mineral, contam-se peixe, sementes, leguminosas e cereais integrais.</li>
+<li><strong>Fluoreto</strong> · Ajuda a proteger os dentes contra a cárie. Pode estar presente na água em quantidades variáveis.</li>
+</ul></details>
+<details><summary>Água</summary><p>É essencial ao transporte de substâncias e à regulação da temperatura corporal. Está presente na água que bebemos e em alimentos como sopa, fruta e hortícolas.</p></details>
+<details><summary>Fibra alimentar</summary><p>É constituída sobretudo por hidratos de carbono que escapam à digestão no intestino delgado. Contribui para o funcionamento intestinal. Encontra-se em cereais integrais, fruta, hortícolas e leguminosas. Num wrap, a tortilha integral, a cenoura e o grão podem contribuir para o teor de fibra.</p></details>
+<p><strong>Aplicação ao wrap</strong> · Numa tortilha integral com grão, pimento e azeite, identifica um ingrediente que forneça hidratos de carbono, um que forneça proteína, um que forneça lípidos e um que forneça vitamina C. Depois procura dois ingredientes que forneçam fibra.</p>
+<details><summary>Ver resposta orientadora</summary><p>A tortilha integral fornece hidratos de carbono, o grão fornece proteína, o azeite fornece lípidos e o pimento fornece vitamina C. A tortilha integral e o grão também fornecem fibra. Há outras combinações possíveis porque os alimentos fornecem mais do que um nutriente.</p></details>
+<p><small>Consulta a composição de cada ingrediente na <a href="https://portfir-insa.min-saude.pt/">Tabela da Composição de Alimentos do INSA</a>.</small></p>
+</section>`;
+function show(i,focus=false){
+ const x=lessons[i];choose.value=i;
+ panel.innerHTML='<p class="kicker">Aula '+x.n+' · '+x.d+' · '+(i===16?'60 minutos':'90 minutos')+'</p><h2 id="lesson-title" tabindex="-1">'+x.t+'</h2>'+(x.n==='02'?nutrientLesson:'<section class="card"><h3>Matéria</h3><p>'+x.m[0]+'</p><p>'+x.m[1]+'</p></section>')+'<details class="card curio"><summary>Sabias que…?</summary><p>'+x.m[2]+'</p></details><section class="card work"><h3>Na cozinha</h3><p>'+x.p+'</p></section><section class="card"><h3>Desafio de revisão</h3><p>'+x.q+'</p><details><summary>Ver resposta comentada</summary><p>'+x.a+'</p></details></section><div class="actions"><button id="prev" '+(i===0?'disabled':'')+'>← Aula anterior</button><button id="next" '+(i===lessons.length-1?'disabled':'')+'>Aula seguinte →</button></div>';
+ panel.querySelector('#prev').onclick=()=>show(i-1,true);
+ panel.querySelector('#next').onclick=()=>show(i+1,true);
+ if(focus)panel.querySelector('h2').focus();
+}
+choose.onchange=()=>show(Number(choose.value),true);show(0);
+const groups=[
+ ['Cereais e tubérculos',28,'#dcb167','Pão, arroz, massa, aveia e batata.'],
+ ['Hortícolas',23,'#72a364','Couve, cenoura, tomate e brócolos.'],
+ ['Fruta',20,'#dc765f','Maçã, pera, laranja e uvas.'],
+ ['Lacticínios',18,'#dacaa2','Leite, iogurte e queijo.'],
+ ['Carne, pescado e ovos',5,'#b87a74','Frango, sardinha e ovos.'],
+ ['Leguminosas',4,'#bd8b54','Grão, feijão e lentilhas.'],
+ ['Gorduras e óleos',2,'#f2cc59','Azeite e outros óleos alimentares.']
+];
+const svg=document.querySelector('#wheel'),ns='http://www.w3.org/2000/svg';
+function shape(type,attrs){const el=document.createElementNS(ns,type);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);svg.append(el);return el;}
+const buttons=document.querySelector('#groups'),paths=[];
+let start=-Math.PI/2;
+function selectGroup(i){const g=groups[i];document.querySelector('#group-info').textContent=g[0]+' · '+g[1]+'%. '+g[3];[...buttons.children].forEach((b,j)=>b.setAttribute('aria-pressed',i===j));paths.forEach((p,j)=>p.setAttribute('opacity',i===j?'1':'.68'));}
+groups.forEach(([name,pct,color],i)=>{
+ const end=start+Math.PI*2*pct/100;
+ const point=a=>[100+91*Math.cos(a),100+91*Math.sin(a)].join(' ');
+ const p=shape('path',{d:'M100 100 L'+point(start)+' A91 91 0 0 1 '+point(end)+' Z',fill:color,stroke:'#fffdf8','stroke-width':2});
+ p.style.cursor='pointer';p.onclick=()=>selectGroup(i);paths.push(p);start=end;
+ const b=document.createElement('button');b.textContent=name+' · '+pct+'%';b.onclick=()=>selectGroup(i);buttons.append(b);
+});
+shape('circle',{cx:100,cy:100,r:32,fill:'#d4e9ed'});
+shape('text',{x:100,y:105,'text-anchor':'middle',fill:'#203f42','font-size':15}).textContent='Água';
+selectGroup(0);
+const journey=[['Boca','Mastiga e mistura o alimento com saliva.'],['Esófago','Transporta o alimento até ao estômago.'],['Estômago','Mistura o alimento com os sucos gástricos.'],['Intestino delgado','Prossegue a digestão e absorve grande parte dos nutrientes.'],['Intestino grosso','Absorve parte da água restante e participa na formação das fezes.']];
+const flow=document.querySelector('#flow'), flowInfo=document.querySelector('#flow-info');
+function showStage(i){flowInfo.textContent=journey[i][1];[...flow.children].forEach((b,j)=>b.setAttribute('aria-pressed',i===j));}
+journey.forEach(([name],i)=>{const b=document.createElement('button');b.textContent=name;b.onclick=()=>showStage(i);flow.append(b);});showStage(0);
+function calculator(ids,out,calc,suffix=''){
+ const inputs=ids.map(id=>document.getElementById(id));const result=document.getElementById(out);
+ function update(){const nums=inputs.map(el=>el.valueAsNumber);const n=calc(...nums);result.value=inputs.every(el=>el.validity.valid)&&Number.isFinite(n)?fmt.format(n)+suffix:'Introduz valores válidos.';}
+ inputs.forEach(el=>el.addEventListener('input',update));update();
+}
+calculator(['value','portion'],'result',(v,p)=>v*p/100);
+calculator(['mass','base','target'],'scaled',(m,b,t)=>m*t/b,' g');
+</script><script type="module">import { mountAutoSiteWidget } from "/_sites/dispatch-assets/sites-widget.js";mountAutoSiteWidget({"kind":"auto","toolbarOrigin":null,"viewerRemixEnabled":true,"invitationBanner":true,"mobileEnabled":false,"environment":"production","chatgptOrigin":"https://chatgpt.com","locale":"pt-PT","accountId":"personal","projectId":"appgprj_6af11bcc8c40819191ab0e6888a72484","projectTitle":"Da despensa ao prato"});</script>
+<div data-sites-widget="editor-composer" popover="manual"><template shadowrootmode="open"><style>
+      
+      :host {
+        all: initial !important;
+        display: block !important;
+        inset: 0 !important;
+        pointer-events: none !important;
+        position: fixed !important;
+        z-index: 2147483647 !important;
+      }
+    </style><style>._Button_milvu_1{--button-press-scale:.96;--button-surface-transition:background-color .15s ease, box-shadow .15s ease, transform .15s ease;--button-size:32px;--button-icon-size:18px;--button-gutter:12px;all:initial;box-sizing:border-box;color:var(--button-text-color);cursor:pointer;font:inherit;height:var(--button-size);padding:0 var(--button-gutter);-webkit-user-select:none;user-select:none;white-space:nowrap;flex-shrink:0;gap:6px;font-weight:500;display:inline-block;position:relative}._Button_milvu_1:before,._Button_milvu_1:after{border-radius:inherit;content:"";pointer-events:none;transition:var(--button-surface-transition);will-change:transform;position:absolute;inset:0}._Button_milvu_1:before{background:var(--button-background-color)}._Button_milvu_1:focus{outline:0}._Button_milvu_1:focus-visible:after{outline:2px solid var(--button-ring-color,currentColor);outline-offset:var(--button-ring-offset,2px)}._Button_milvu_1[data-size=lg]{--button-size:36px}._Button_milvu_1[data-icon-size=lg]{--button-icon-size:20px}._Button_milvu_1:where([data-pill]){padding-inline:calc(var(--button-gutter) * 1.33);border-radius:9999px}._Button_milvu_1[data-uniform]{width:var(--button-size);padding:0}._Button_milvu_1:where([data-variant=solid][data-color=primary]){--button-background-color:var(--lightningcss-light,#181818)var(--lightningcss-dark,#f3f3f3);--button-background-color-hover:var(--lightningcss-light,#303030)var(--lightningcss-dark,#ededed);--button-background-color-active:var(--lightningcss-light,#414141)var(--lightningcss-dark,#dcdcdc);--button-text-color:var(--lightningcss-light,#fff)var(--lightningcss-dark,#0d0d0d)}._Button_milvu_1:where([data-variant=solid][data-color=secondary]){--button-background-color:#fff;--button-background-color-hover:#f7f7f7;--button-background-color-active:#ededed;--button-text-color:#171717}._Button_milvu_1:where([data-variant=ghost]){--button-background-color:transparent;--button-background-color-hover:var(--lightningcss-light,#0d0d0d14)var(--lightningcss-dark,#ffffff1f);--button-background-color-active:var(--lightningcss-light,#0d0d0d1f)var(--lightningcss-dark,#ffffff29);--button-text-color:var(--lightningcss-light,#0d0d0d)var(--lightningcss-dark,#fff)}._Button_milvu_1:where([data-variant=ghost][data-color=secondary]){--button-text-color:var(--lightningcss-light,#5d5d5d)var(--lightningcss-dark,#afafaf)}._Button_milvu_1:not(:disabled):hover:before{background:var(--button-background-color-hover)}._Button_milvu_1:not(:disabled):active:before{background:var(--button-background-color-active);transform:scale(var(--button-press-scale))}._Button_milvu_1:not(:disabled):active:after{transform:scale(var(--button-press-scale))}._Button_milvu_1[data-disabled]{cursor:default;opacity:.32}._Button_milvu_1:disabled{cursor:default}._Button_milvu_1 svg:not([data-no-autosize]){height:var(--button-icon-size);width:var(--button-icon-size)}._ButtonInner_milvu_128{align-items:center;gap:inherit;justify-content:center;width:100%;height:100%;transition:opacity .15s .1s;display:flex;position:relative}._Button_milvu_1[data-loading] ._ButtonInner_milvu_128{opacity:0;transition:opacity .3s}._Button_milvu_1>._ButtonLoader_milvu_145{z-index:3;pointer-events:none;justify-content:center;align-items:center;display:flex;position:absolute;inset:0}._Button_milvu_1>._ButtonLoader_milvu_145[data-entering]{opacity:0}._Button_milvu_1>._ButtonLoader_milvu_145[data-exiting]{opacity:1}._Button_milvu_1>._ButtonLoader_milvu_145[data-entering-active],._Button_milvu_1>._ButtonLoader_milvu_145[data-entering][data-interrupted]{opacity:1;transition:opacity .15s}._Button_milvu_1>._ButtonLoader_milvu_145[data-exiting-active],._Button_milvu_1>._ButtonLoader_milvu_145[data-exiting][data-interrupted]{opacity:0;transition:opacity .15s}@media (prefers-reduced-motion:reduce){._Button_milvu_1:before,._Button_milvu_1:after,._Button_milvu_1 ._ButtonInner_milvu_128,._Button_milvu_1>._ButtonLoader_milvu_145{transition:none}}._LoadingIndicator_1mmfp_1{width:var(--indicator-size,1em);height:var(--indicator-size,1em);animation:_rotate_1mmfp_1 var(--indicator-rotate-duration,.8s) linear infinite;flex-shrink:0;transition:opacity .15s;display:inline-block;position:relative}._LoadingIndicator_1mmfp_1:before{border:var(--indicator-stroke,2px) solid var(--indicator-color,currentcolor);content:"";border-radius:50%;display:block;position:absolute;inset:0;-webkit-mask-image:conic-gradient(#0000,#000);mask-image:conic-gradient(#0000,#000)}._LoadingIndicator_1mmfp_1:after{width:var(--indicator-stroke,2px);height:var(--indicator-stroke,2px);margin-left:calc(var(--indicator-stroke,2px) * -1 / 2);background-color:var(--indicator-color,currentcolor);content:"";border-radius:100%;display:block;position:absolute;top:0;left:50%}@keyframes _rotate_1mmfp_1{0%{transform:rotate(0)}to{transform:rotate(1turn)}}._TransitionGroupChild_1d6a5_1{display:block}._Image_1l1xj_1{opacity:0;transition:opacity .3s var(--transition-ease-basic,ease);display:block}._Image_1l1xj_1[data-loaded]{opacity:1}@media (prefers-reduced-motion:reduce){._Image_1l1xj_1{transition:none}}._Tooltip_arpo7_1{border-radius:var(--tooltip-border-radius);max-width:300px;animation-name:_scale-in_arpo7_1;animation-duration:.25s;animation-timing-function:var(--cubic-enter);background:var(--tooltip-background-color);box-shadow:var(--tooltip-box-shadow);color:var(--tooltip-text-color);font-size:var(--tooltip-font-size);font-weight:var(--tooltip-font-weight);line-height:var(--tooltip-line-height);transform-origin:var(--radix-tooltip-content-transform-origin);transition:background-color .15s}._Tooltip_arpo7_1[data-state=closed]{animation:_scale-out_arpo7_1 .25s var(--cubic-enter)}._Tooltip_arpo7_1[data-clickable=false]{cursor:default}._Tooltip_arpo7_1[data-clickable=true]{cursor:pointer}@media (hover:hover){._Tooltip_arpo7_1[data-compact=true][data-clickable=true]:hover{background:var(--tooltip-compact-interactive-background-color-hover);color:var(--tooltip-compact-interactive-text-color-hover)}}._Tooltip_arpo7_1[data-gutter-size=sm]{padding:var(--tooltip-padding-sm)}._Tooltip_arpo7_1[data-gutter-size=md]{padding:var(--tooltip-padding-md)}._Tooltip_arpo7_1[data-gutter-size=lg]{padding:var(--tooltip-padding-lg)}._Tooltip_arpo7_1[data-compact=true]{padding:var(--tooltip-compact-padding);background:var(--tooltip-compact-background-color);color:var(--tooltip-compact-text-color);font-size:var(--tooltip-compact-font-size);font-weight:var(--tooltip-compact-font-weight)}@keyframes _scale-in_arpo7_1{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}@keyframes _scale-out_arpo7_1{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.97)}}._TriggerDecorator_arpo7_86{cursor:pointer;transition:text-decoration .2s var(--cubic-exit);-webkit-text-decoration:underline dotted #0000;text-decoration:underline dotted #0000;display:inline-flex}._TriggerDecorator_arpo7_86:focus{outline:0}._TriggerDecorator_arpo7_86[data-state*=open]{-webkit-text-decoration-color:var(--color-text-tertiary);text-decoration-color:var(--color-text-tertiary);transition-timing-function:var(--cubic-enter)}._Layout_1a5g1_1{flex-shrink:0;transition-property:height,width;display:block;position:relative}._Layout_1a5g1_1[data-clip=true]{overflow:hidden}._Layout_1a5g1_1[data-direction=in]{transition-delay:var(--tg-layout-enter-delay);transition-duration:var(--tg-layout-enter-duration);transition-timing-function:var(--tg-layout-enter-timing-function)}._Layout_1a5g1_1[data-direction=out]{transition-delay:var(--tg-layout-exit-delay);transition-duration:var(--tg-layout-exit-duration);transition-timing-function:var(--tg-layout-exit-timing-function)}._Layout_1a5g1_1[data-direction=move]{transition-delay:var(--tg-layout-move-delay);transition-duration:var(--tg-layout-move-duration);transition-timing-function:var(--tg-layout-move-timing-function)}._Layout_1a5g1_1[data-interrupted=true]{transition-delay:0s}._TransitionItem_1a5g1_34{will-change:var(--tg-will-change,auto);flex-shrink:0}._TransitionItem_1a5g1_34[data-entering],._TransitionItem_1a5g1_34[data-exiting]{width:100%;position:absolute;top:0;left:0}._Layout_1a5g1_1[data-dimension=width]>._TransitionItem_1a5g1_34[data-entering],._Layout_1a5g1_1[data-dimension=width]>._TransitionItem_1a5g1_34[data-exiting]{width:auto}._Layout_1a5g1_1[data-resize-contents][data-dimension=width]>._TransitionItem_1a5g1_34[data-entering]{width:100%}._Layout_1a5g1_1[data-item-anchor=end]>._TransitionItem_1a5g1_34[data-entering],._Layout_1a5g1_1[data-item-anchor=end]>._TransitionItem_1a5g1_34[data-exiting]{bottom:0;top:initial}._Layout_1a5g1_1[data-item-anchor=end][data-dimension=width]>._TransitionItem_1a5g1_34[data-entering],._Layout_1a5g1_1[data-item-anchor=end][data-dimension=width]>._TransitionItem_1a5g1_34[data-exiting]{left:initial;right:0}._Layout_1a5g1_1[data-item-anchor=center]>._TransitionItem_1a5g1_34:is([data-entering],[data-exiting]){top:50%;translate:0 -50%}._Layout_1a5g1_1[data-item-anchor=center][data-dimension=width]>._TransitionItem_1a5g1_34:is([data-entering],[data-exiting]){top:0;left:50%;translate:-50%}._TransitionItem_1a5g1_34[data-entering]{filter:var(--tg-initial-filter);opacity:var(--tg-initial-opacity);transform:var(--tg-initial-transform)}._TransitionItem_1a5g1_34[data-exiting]{filter:var(--tg-enter-filter);opacity:var(--tg-enter-opacity);transform:var(--tg-enter-transform)}._TransitionItem_1a5g1_34[data-entering-active],._TransitionItem_1a5g1_34[data-entering][data-interrupted]{filter:var(--tg-enter-filter);opacity:var(--tg-enter-opacity);transform:var(--tg-enter-transform);transition:opacity var(--tg-enter-duration) var(--tg-enter-timing-function) var(--tg-enter-delay), transform var(--tg-enter-duration) var(--tg-enter-timing-function) var(--tg-enter-delay), filter var(--tg-enter-duration) var(--tg-enter-timing-function) var(--tg-enter-delay)}._TransitionItem_1a5g1_34[data-exiting-active],._TransitionItem_1a5g1_34[data-exiting][data-interrupted]{filter:var(--tg-exit-filter);opacity:var(--tg-exit-opacity);transform:var(--tg-exit-transform);transition:opacity var(--tg-exit-duration) var(--tg-exit-timing-function) var(--tg-exit-delay), transform var(--tg-exit-duration) var(--tg-exit-timing-function) var(--tg-exit-delay), filter var(--tg-exit-duration) var(--tg-exit-timing-function) var(--tg-exit-delay)}._Theme_1ewnz_2{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark;--cubic-enter:cubic-bezier(.19, 1, .22, 1);--cubic-exit:cubic-bezier(.8, 0, .4, 1);--tooltip-border-radius:9999px;--tooltip-background-color:#1d1d1d;--tooltip-text-color:#fff;--tooltip-box-shadow:0 4px 12px #0000001f;--tooltip-font-size:14px;--tooltip-font-weight:500;--tooltip-line-height:20px;--tooltip-padding-sm:8px 12px;--tooltip-padding-md:5px 12px;--tooltip-padding-lg:14px 18px;--tooltip-compact-padding:2px 8px;--tooltip-compact-background-color:var(--lightningcss-light,#303030)var(--lightningcss-dark,#afafaf);--tooltip-compact-text-color:var(--lightningcss-light,#fff)var(--lightningcss-dark,#0d0d0d);--tooltip-compact-interactive-background-color-hover:var(--lightningcss-light,#414141)var(--lightningcss-dark,#8f8f8f);--tooltip-compact-interactive-text-color-hover:var(--lightningcss-light,#fff)var(--lightningcss-dark,#0d0d0d);--tooltip-compact-font-size:14px;--tooltip-compact-font-weight:400;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}@media (prefers-color-scheme:dark){._Theme_1ewnz_2{--lightningcss-light: ;--lightningcss-dark:initial}}._Portal_1ewnz_35{pointer-events:none;z-index:2147483647;position:relative}._Tooltip_1ewnz_41{box-sizing:border-box;cursor:default;letter-spacing:0;pointer-events:auto;text-align:center;border:1px solid #ffffff1f}._SharingTooltip_1ewnz_51{--tooltip-border-radius:14px;--tooltip-background-color:var(--tooltip-compact-background-color);--tooltip-text-color:var(--tooltip-compact-text-color);text-wrap:pretty}._HideHint_1ewnz_58{--tooltip-border-radius:14px;--tooltip-padding-md:10px 12px;pointer-events:auto;text-align:left;border:0;width:280px}._SharingHint_1ewnz_68,._SharingHint_1ewnz_68>span{overflow-wrap:anywhere;display:block}._HideHintContent_1ewnz_74{align-items:center;gap:12px;display:flex}._HideHintText_1ewnz_80{flex:1;min-width:0}._Shortcut_1ewnz_85{flex-shrink:0;gap:4px;display:inline-flex}._Shortcut_1ewnz_85 kbd{box-sizing:border-box;font:inherit;background:#ffffff17;border:1px solid #ffffff24;border-radius:5px;justify-content:center;align-items:center;min-width:22px;height:22px;padding:0 4px;font-size:12px;display:inline-flex;box-shadow:0 1px 1px #ffffff1f}@media (prefers-reduced-motion:reduce){._Portal_1ewnz_35 ._Tooltip_1ewnz_41[data-state]{animation:none}}._Widget_1nh4p_1,._Widget_1nh4p_1 *,._Widget_1nh4p_1 :before,._Widget_1nh4p_1 :after{box-sizing:border-box}._Widget_1nh4p_1{--button-ring-color:#171717;--button-ring-offset:3px;--widget-surface:#ffffffc7;--widget-surface-highlight:#ffffffc7;--widget-text:#171717;--widget-text-secondary:#444;--widget-text-tertiary:var(--lightningcss-light,#8f8f8f)var(--lightningcss-dark,#afafaf);--widget-placeholder:#777;--widget-border:#0d0d0d1f;--widget-border-highlight:#0d0d0d2e;--widget-control-hover:#0d0d0d0f;--widget-control-active:#0d0d0d1a;--widget-shadow:#00000024;all:initial;box-sizing:border-box;color:var(--widget-text);--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark;pointer-events:auto;z-index:2147483647;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;position:fixed}@media (prefers-color-scheme:dark){._Widget_1nh4p_1{--lightningcss-light: ;--lightningcss-dark:initial}}._Widget_1nh4p_1{pointer-events:none;bottom:auto;right:auto}._Widget_1nh4p_1[data-snapping]{transition:left var(--widget-snap-duration) cubic-bezier(.2, .8, .2, 1), top var(--widget-snap-duration) cubic-bezier(.2, .8, .2, 1)}._LandingShadow_1nh4p_46{box-sizing:border-box;pointer-events:none;z-index:2147483646;background:#64748b29;border-radius:18px;position:fixed;box-shadow:0 4px 20px #00000014}._WidgetEntrance_1nh4p_56[data-entering]{opacity:0;transform:translateY(4px)}._WidgetEntrance_1nh4p_56[data-entering-active]{opacity:1;transition:opacity .18s cubic-bezier(.19,1,.22,1),transform .18s cubic-bezier(.19,1,.22,1);transform:translateY(0)}._WidgetExit_1nh4p_69[data-exiting]{opacity:0}._WidgetExit_1nh4p_69{contain:paint;pointer-events:none;z-index:2147483647;position:fixed;inset:0}._Widget_1nh4p_1[data-tucked] ._Shell_1nh4p_82{width:64px;height:64px;transform:translate(var(--tuck-x), var(--tuck-y));border-radius:32px}._Widget_1nh4p_1[data-peek-phase=expanded] ._Shell_1nh4p_82{width:88px;height:88px;transform:translate(calc(var(--tuck-x) - 12px), calc(var(--tuck-y) - 12px));--widget-morph-easing:cubic-bezier(.2, 1.4, .4, 1);border-radius:32px}._Widget_1nh4p_1[data-quiet-tuck] ._Shell_1nh4p_82{--widget-morph-duration:.22s;--widget-morph-easing:ease}._Widget_1nh4p_1[data-peek-phase=away] ._Shell_1nh4p_82{transform:translate(calc(var(--tuck-x) + var(--corner-x-direction) * 80px), calc(var(--tuck-y) + var(--corner-y-direction) * 80px));--widget-morph-duration:.36s;--widget-morph-easing:cubic-bezier(.55, 0, .85, .4)}._Widget_1nh4p_1[data-peek-phase=tucked]:not([data-quiet-tuck]) ._ToolbarPanel_1nh4p_115 ._Shell_1nh4p_82{--widget-morph-duration:.15s;--widget-morph-easing:ease-out}._ShellControls_1nh4p_120{width:max-content;transition:opacity .12s .14s}._Widget_1nh4p_1[data-tucked] ._ShellControls_1nh4p_120{opacity:0;transition:opacity .1s}._Launcher_1nh4p_130{cursor:pointer;font:inherit;color:var(--widget-text);white-space:nowrap;-webkit-user-select:none;user-select:none;z-index:1;background:0 0;border:0;justify-content:center;align-items:center;gap:12px;min-width:137px;height:36px;padding:0 40px;font-size:13px;font-weight:400;display:inline-flex}._LauncherRow_1nh4p_153{position:relative}._LauncherLabel_1nh4p_157{line-height:20px;display:inline-block}._Widget_1nh4p_1[data-dragging] ._Launcher_1nh4p_130{cursor:grabbing}._CornerTarget_1nh4p_167{cursor:pointer;pointer-events:auto;touch-action:none;z-index:2147483647;background:0 0;border:0;width:44px;height:44px;padding:0;position:fixed}._CornerTarget_1nh4p_167:hover,._CornerTarget_1nh4p_167:focus-visible{width:52px;height:52px}._CornerTarget_1nh4p_167:focus-visible{outline:2px solid var(--button-ring-color);outline-offset:-3px}._Widget_1nh4p_1[data-corner=top-left] ._CornerTarget_1nh4p_167{border-radius:0 0 32px;top:0;left:0}._Widget_1nh4p_1[data-corner=top-right] ._CornerTarget_1nh4p_167{border-radius:0 0 0 32px;top:0;right:0}._Widget_1nh4p_1[data-corner=bottom-left] ._CornerTarget_1nh4p_167{border-radius:0 32px 0 0;bottom:0;left:0}._Widget_1nh4p_1[data-corner=bottom-right] ._CornerTarget_1nh4p_167{border-radius:32px 0 0;bottom:0;right:0}._Widget_1nh4p_1[data-corner=bottom-center] ._CornerTarget_1nh4p_167{border-radius:32px 32px 0 0;bottom:0;left:50%;transform:translate(-50%)}._Panel_1nh4p_203 ._LogoButton_1nh4p_203[data-variant][data-color]{--button-background-color-hover:var(--widget-control-hover);--button-background-color-active:var(--widget-control-active);--button-text-color:var(--widget-text);--button-size:28px;z-index:2;position:absolute;top:4px;left:4px}._LogoButton_1nh4p_203:focus-visible:before{background:var(--button-background-color-hover)}._Shell_1nh4p_82{--widget-morph-duration:.42s;--widget-morph-easing:cubic-bezier(.4, 0, .2, 1);pointer-events:auto;width:var(--widget-surface-width,137px);height:var(--widget-surface-height,36px);transition:transform var(--widget-morph-duration) var(--widget-morph-easing), width var(--widget-morph-duration) var(--widget-morph-easing), height var(--widget-morph-duration) var(--widget-morph-easing), border-radius var(--widget-morph-duration) var(--widget-morph-easing), opacity .15s ease;border-radius:18px;position:relative;transform:translate(0)}._Panel_1nh4p_203[data-expanded] ._Shell_1nh4p_82,._WidgetEntrance_1nh4p_56[data-entering] ._ToolbarPanel_1nh4p_115 ._Shell_1nh4p_82{transition:none}._Widget_1nh4p_1:not([data-tucked]) ._Shell_1nh4p_82:has(._ShellContent_1nh4p_248[data-entering],._ShellContent_1nh4p_248[data-exiting]){transition-property:transform,border-radius,opacity}._ShellLayout_1nh4p_252{border-radius:inherit;width:max-content;min-height:36px;transition-property:width}._ShellContent_1nh4p_248{z-index:1;min-height:36px;position:relative}._Widget_1nh4p_1[data-corner^=top] ._ShellContent_1nh4p_248:is([data-entering],[data-exiting]){top:0;bottom:auto}._Widget_1nh4p_1[data-corner^=bottom] ._ShellContent_1nh4p_248:is([data-entering],[data-exiting]){top:auto;bottom:0}._ShellContent_1nh4p_248[data-exiting],._ShellContent_1nh4p_248[data-exiting] *{pointer-events:none}._Shell_1nh4p_82:before{-webkit-backdrop-filter:var(--sites-toolbar-backdrop-filter,blur(18px) saturate(1.25));backdrop-filter:var(--sites-toolbar-backdrop-filter,blur(18px) saturate(1.25));background:var(--sites-toolbar-glass,var(--widget-surface));border-radius:inherit;box-shadow:0 0 0 1px var(--widget-border), 0 10px 30px var(--widget-shadow), 0 2px 6px #00000014;content:"";pointer-events:none;will-change:transform;transition:background-color .15s,box-shadow .15s,transform .15s;position:absolute;inset:0}._Shell_1nh4p_82:hover:before,._Shell_1nh4p_82:focus-within:before{background:var(--sites-toolbar-glass,var(--widget-surface-highlight))}._Shell_1nh4p_82:after{border-radius:inherit;content:"";pointer-events:none;transition:transform .15s;position:absolute;inset:0}._Panel_1nh4p_203:not([data-expanded]) ._Shell_1nh4p_82:has(._Launcher_1nh4p_130:focus-visible):after{outline:2px solid var(--button-ring-color);outline-offset:var(--button-ring-offset)}._Shell_1nh4p_82:has(._Launcher_1nh4p_130:active):before{transform:scale(.98)}._Shell_1nh4p_82:has(._Launcher_1nh4p_130:active):after{transform:scale(.98)}._LauncherLogo_1nh4p_325{flex:none;width:18px;height:18px;display:block}._LauncherLogo_1nh4p_325[data-entering] img[data-loaded]{transform-origin:50%;animation:.7s cubic-bezier(.22,1,.36,1) both _blossomEntrance_1nh4p_1}@keyframes _blossomEntrance_1nh4p_1{0%{transform:rotate(-60deg)scale(.9)}to{transform:rotate(0)scale(1)}}._Panel_1nh4p_203{--widget-panel-width:min(var(--widget-composer-width,360px), calc(100vw - 48px));width:var(--widget-panel-width);flex-direction:column;align-items:flex-start;display:flex;position:relative}._Panel_1nh4p_203:is(:lang(ae),:lang(ar),:lang(arc),:lang(bcc),:lang(bqi),:lang(ckb),:lang(dv),:lang(fa),:lang(glk),:lang(he),:lang(ku),:lang(mzn),:lang(nqo),:lang(pnb),:lang(ps),:lang(sd),:lang(ug),:lang(ur),:lang(yi)){align-items:flex-end}._Composer_1nh4p_357{min-height:36px;width:var(--widget-panel-width);background:0 0;grid-template-columns:minmax(0,1fr) 24px;align-items:end;gap:8px;padding:6px;display:grid;overflow:hidden}._ShellLayout_1nh4p_252[data-resize-contents] ._Composer_1nh4p_357{width:100%}._Textarea_1nh4p_373{all:initial;box-sizing:border-box;color:var(--widget-text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;resize:none;align-self:center;width:calc(100% - 12px);height:24px;min-height:24px;max-height:180px;margin-left:12px;padding:3px 0;font-family:inherit;font-size:14px;font-weight:400;line-height:18px;transition:none;display:block;overflow-y:auto}._Textarea_1nh4p_373::placeholder{color:var(--widget-placeholder);opacity:1}._Textarea_1nh4p_373:placeholder-shown{white-space:pre;overflow-x:hidden}._Textarea_1nh4p_373:focus{outline:0}._ComposerFooter_1nh4p_411{justify-content:flex-end;gap:4px;display:flex}._ComposerTooltip_1nh4p_417{--tooltip-border-radius:12px;--tooltip-background-color:var(--tooltip-compact-background-color);--tooltip-text-color:var(--tooltip-compact-text-color)}._ComposerArrow_1nh4p_423{transition:transform .16s ease-out;transform:rotate(0)}._ComposerArrow_1nh4p_423[data-open]{transform:rotate(45deg)}@media (prefers-reduced-motion:reduce){._ComposerArrow_1nh4p_423{transition:none}}._Panel_1nh4p_203 ._SendButton_1nh4p_436[data-variant][data-color]{--button-size:24px;--button-icon-size:16px;align-self:end}:where(._Widget_1nh4p_1:not([data-tucked])) ._ToolbarPanel_1nh4p_115 ._Shell_1nh4p_82{border-radius:22px;height:auto}._ToolbarPanel_1nh4p_115 ._ShellLayout_1nh4p_252[data-resize-contents]>._ShellContent_1nh4p_248[data-entering]{position:relative}._ToolbarPanel_1nh4p_115 ._ShellContent_1nh4p_248[data-exiting]:has(._Composer_1nh4p_357){width:100%}._ToolbarPanel_1nh4p_115 ._ShellContent_1nh4p_248[data-exiting]:has(._Composer_1nh4p_357) ._Composer_1nh4p_357{width:100%}._ToolbarPanel_1nh4p_115 ._Composer_1nh4p_357{grid-template-columns:minmax(0,1fr) 28px;padding:8px}._ToolbarPanel_1nh4p_115 ._Textarea_1nh4p_373{height:28px;min-height:28px;padding-block:4px;font-size:15px;line-height:20px}._ToolbarPanel_1nh4p_115 ._SendButton_1nh4p_436[data-variant][data-color]{--button-size:28px;--button-icon-size:16px;--button-background-color:var(--lightningcss-light,#171717)var(--lightningcss-dark,#f3f3f3);--button-background-color-hover:var(--lightningcss-light,#303030)var(--lightningcss-dark,#e5e5e5);--button-background-color-active:var(--lightningcss-light,#444)var(--lightningcss-dark,#d4d4d4);--button-text-color:var(--lightningcss-light,#fff)var(--lightningcss-dark,#171717)}._Launcher_1nh4p_130:focus{outline:0}._Panel_1nh4p_203 ._LauncherDismissButton_1nh4p_491[data-variant][data-color]{--button-background-color-hover:var(--widget-control-hover);--button-background-color-active:var(--widget-control-active);--button-text-color:var(--widget-text-tertiary);--button-size:28px;--button-icon-size:16px;opacity:0;pointer-events:none;z-index:2;transition:opacity 80ms;position:absolute;bottom:4px;right:4px}._LauncherDismissButton_1nh4p_491:focus-visible:before{background:var(--button-background-color-hover)}._Panel_1nh4p_203:not([data-expanded]) ._LauncherDismissButton_1nh4p_491[data-variant][data-color]{opacity:1;pointer-events:auto}._Panel_1nh4p_203:not([data-expanded]) ._Shell_1nh4p_82:has(._ShellContent_1nh4p_248[data-entering]) ._LauncherDismissButton_1nh4p_491[data-variant][data-color]{opacity:0;pointer-events:none}@media (prefers-reduced-motion:reduce){._WidgetEntrance_1nh4p_56[data-entering]{opacity:1;transition:none;transform:none}._Widget_1nh4p_1[data-snapping],._LauncherLogo_1nh4p_325[data-entering] img[data-loaded],._Widget_1nh4p_1[data-tucked] ._Shell_1nh4p_82,._Widget_1nh4p_1[data-peek-phase] ._Shell_1nh4p_82,._Widget_1nh4p_1[data-quiet-tuck] ._Shell_1nh4p_82,._ShellControls_1nh4p_120,._Widget_1nh4p_1[data-tucked] ._ShellControls_1nh4p_120,._Composer_1nh4p_357,._Launcher_1nh4p_130,._Launcher_1nh4p_130:before,._Shell_1nh4p_82,._ShellLayout_1nh4p_252,._Shell_1nh4p_82:before,._Shell_1nh4p_82:after,._Panel_1nh4p_203 ._LauncherDismissButton_1nh4p_491[data-variant][data-color],._Textarea_1nh4p_373{transition:none;animation:none}}@media (hover:hover){._Shell_1nh4p_82:hover{--widget-border:var(--widget-border-highlight)}}@media (prefers-color-scheme:dark){._Widget_1nh4p_1{--button-ring-color:#fff;--widget-surface:#282828c2;--widget-surface-highlight:#383838c2;--widget-text:#f5f5f5;--widget-text-secondary:#d0d0d0;--widget-placeholder:#aaa;--widget-border:#ffffff24;--widget-border-highlight:#ffffff38;--widget-control-hover:#ffffff1a;--widget-control-active:#ffffff29;--widget-shadow:#0000004d}._LauncherLogo_1nh4p_325{filter:invert()}}@media (max-width:520px){._Textarea_1nh4p_373{font-size:16px}._Panel_1nh4p_203{--widget-panel-width:calc(100vw - 32px)}}._Shell_1nh4p_82:has([data-toolbar-menu-mounted]):before{visibility:hidden}._Shell_1nh4p_82:has([data-toolbar-menu-mounted]):after{visibility:hidden}._SharingClose_1nh4p_593{gap:12px;min-width:0;padding-block:0;padding-inline:10px 16px}._SharingClose_1nh4p_593 svg{width:16px;height:16px}._Shell_1nh4p_82:has(._SharingClose_1nh4p_593):before{background:var(--sites-toolbar-action-glass)}._Shell_1nh4p_82:has(._SharingClose_1nh4p_593:active):before{transform:scale(.94)}._Shell_1nh4p_82:has(._SharingClose_1nh4p_593:active):after{transform:scale(.94)}._Shell_1nh4p_82:has([data-menu-open]){pointer-events:none}._Widget_1lfcb_1{--safe-top:env(safe-area-inset-top,0px);--safe-right:env(safe-area-inset-right,0px);--safe-bottom:env(safe-area-inset-bottom,0px);--safe-left:env(safe-area-inset-left,0px);pointer-events:auto;width:max-content;max-width:calc(100vw - 32px);height:52px}._Widget_1lfcb_1[data-mobile-widget-menu-open]{pointer-events:none}._Widget_1lfcb_1[data-mobile-widget-snapping]{transition:left var(--widget-snap-duration) cubic-bezier(.2, .8, .2, 1), top var(--widget-snap-duration) cubic-bezier(.2, .8, .2, 1)}@media (prefers-reduced-motion:reduce){._Widget_1lfcb_1[data-mobile-widget-snapping]{transition:none}}._Launcher_1lfcb_27,._Action_1lfcb_28,._EditAction_1lfcb_29,._MoreAction_1lfcb_30{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}._Launcher_1lfcb_27:before,._Menu_1lfcb_39:before{border:1px solid var(--widget-border);-webkit-backdrop-filter:blur(18px)saturate(1.25);backdrop-filter:blur(18px)saturate(1.25);background:var(--widget-surface);box-shadow:0 4px 20px var(--widget-shadow);color:var(--widget-text)}._Launcher_1lfcb_27{cursor:grab;isolation:isolate;touch-action:none;border-radius:26px;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;height:52px;padding:4px;transition:opacity .14s .11s;display:grid;position:relative}._Launcher_1lfcb_27:before{z-index:-1;border-radius:inherit;content:"";pointer-events:none;transition:transform var(--press-duration,.24s) ease-out;position:absolute;inset:0}:where(._Widget_1lfcb_1[data-mobile-widget-pressed]) ._Launcher_1lfcb_27:before{--press-duration:.1s;transform:scale(.96)}:where(._Widget_1lfcb_1[data-mobile-widget-menu-open]) ._Launcher_1lfcb_27{opacity:0;pointer-events:none;transition-duration:80ms;transition-delay:0s}:where(._Widget_1lfcb_1[data-mobile-widget-menu-mounted]) ._Launcher_1lfcb_27:before{visibility:hidden}._Launcher_1lfcb_27 img{pointer-events:none;justify-self:center}@media (prefers-color-scheme:dark){._Launcher_1lfcb_27 img{filter:invert()}}:where(._Widget_1lfcb_1[data-mobile-widget-dragging]) ._Launcher_1lfcb_27{cursor:grabbing}@media (prefers-reduced-motion:reduce){._Launcher_1lfcb_27,._Launcher_1lfcb_27:before{transition:none}}._EditAction_1lfcb_29,._MoreAction_1lfcb_30{min-width:44px;height:44px;color:inherit;cursor:pointer;font:inherit;background:0 0;border:0;border-radius:22px;justify-content:center;align-items:center;padding:0;font-size:16px;line-height:20px;text-decoration:none;display:flex}._EditAction_1lfcb_29{overflow-wrap:anywhere;text-align:center;min-width:0;padding:0 8px}._MoreAction_1lfcb_30{color:var(--widget-text-tertiary)}._MoreAction_1lfcb_30 svg{width:24px;height:24px}._Menu_1lfcb_39{--surface-easing:cubic-bezier(.2, .8, .2, 1);--surface-duration:.25s;--surface-inset:var(--closed-top) var(--closed-right) var(--closed-bottom) var(--closed-left);--surface-radius:26px;z-index:2147483646;opacity:0;pointer-events:none;border-radius:24px;width:min(200px,100vw - 32px);max-width:calc(100vw - 32px);padding:0;display:block;position:relative}._Menu_1lfcb_39:focus{outline:none}._Menu_1lfcb_39:before{inset:var(--surface-inset);border-radius:var(--surface-radius);content:"";pointer-events:none;transition:inset var(--surface-duration) var(--surface-easing), border-radius var(--surface-duration) var(--surface-easing);position:absolute}._Menu_1lfcb_39[data-mobile-widget-positioned]{opacity:1;pointer-events:auto}._Menu_1lfcb_39[data-mobile-widget-positioned][data-state=open]{--surface-duration:.38s;--surface-inset:0px;--surface-radius:24px}._Menu_1lfcb_39[data-state=closed]{animation:_menu-exit_1lfcb_1 var(--surface-duration) both;pointer-events:none}@media (prefers-reduced-motion:reduce){._Menu_1lfcb_39[data-state=closed],._Menu_1lfcb_39:before{transition:none;animation:none}}._Actions_1lfcb_204{clip-path:inset(var(--surface-inset) round var(--surface-radius));opacity:0;transition:clip-path var(--surface-duration) var(--surface-easing), opacity 60ms ease;flex-direction:column;padding:8px;display:flex;position:relative}:where(._Menu_1lfcb_39[data-mobile-widget-positioned][data-state=open]) ._Actions_1lfcb_204{opacity:1;transition:clip-path var(--surface-duration) var(--surface-easing), opacity .18s ease 80ms}@media (prefers-reduced-motion:reduce){._Actions_1lfcb_204{transition:none}}@keyframes _menu-exit_1lfcb_1{0%,to{visibility:visible}}._Action_1lfcb_28{min-height:48px;color:inherit;cursor:pointer;font:inherit;overflow-wrap:anywhere;text-align:start;background:0 0;border:0;border-radius:20px;align-items:center;gap:12px;padding:10px 12px;font-size:16px;text-decoration:none;display:flex}._Action_1lfcb_28 svg{flex:none;width:20px;height:20px}._Action_1lfcb_28:active{background:var(--widget-control-active)}@media (hover:hover){._Action_1lfcb_28:hover{background:var(--widget-control-hover)}}._Action_1lfcb_28:focus-visible,._EditAction_1lfcb_29:focus-visible,._MoreAction_1lfcb_30:focus-visible{outline:2px solid var(--button-ring-color);outline-offset:2px}._Launcher_6xtjb_1,._Launcher_6xtjb_1[data-mobile]{cursor:grab;-webkit-user-select:none;user-select:none;align-items:center;gap:4px;width:max-content;max-width:calc(100vw - 48px);height:36px;padding:4px;transition:opacity .22s 60ms;display:flex}:is(._Launcher_6xtjb_1,._Launcher_6xtjb_1[data-mobile]):active{cursor:grabbing}:is(._Launcher_6xtjb_1,._Launcher_6xtjb_1[data-mobile])[data-menu-open]{opacity:0;pointer-events:none;transition-duration:80ms;transition-delay:0s}@media (prefers-reduced-motion:reduce){._Launcher_6xtjb_1,._Launcher_6xtjb_1[data-mobile]{transition:none}}._Launcher_6xtjb_1 ._Logo_6xtjb_32{place-items:center;width:28px;height:28px;display:grid}._Divider_6xtjb_38{background:var(--widget-border);flex:none;width:1px;height:12px}@media (hover:hover){._Launcher_6xtjb_1:has(._Shortcut_6xtjb_45:hover) ._Divider_6xtjb_38{opacity:0}._Divider_6xtjb_38:has(+._More_6xtjb_46:hover){opacity:0}}._Ghost_6xtjb_50[data-variant=ghost]{--button-background-color-hover:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f);--button-background-color-active:var(--lightningcss-light,#0000001a)var(--lightningcss-dark,#ffffff2e);--button-text-color:var(--widget-text)}._Ghost_6xtjb_50[data-variant=ghost]:focus-visible:after{outline:none}._Ghost_6xtjb_50[data-variant=ghost]:focus-visible:not(:disabled):not(:active):before{background:var(--button-background-color-hover)}._Launcher_6xtjb_1 ._Shortcut_6xtjb_45,._Launcher_6xtjb_1 ._More_6xtjb_46{--button-size:28px;--button-icon-size:16px;font-size:13px}._Launcher_6xtjb_1 ._Shortcut_6xtjb_45{flex-shrink:1;gap:6px;min-width:0;margin-inline:-3px;padding:0 11px}._Label_6xtjb_84{text-overflow:ellipsis;overflow:hidden}._More_6xtjb_46[data-variant=ghost]{--button-text-color:var(--widget-text-tertiary)}._Menu_6xtjb_91[data-state]{width:max-content;min-width:184px;max-width:none}._Menu_6xtjb_91:before{outline:1px solid var(--widget-border);-webkit-backdrop-filter:var(--sites-toolbar-backdrop-filter);backdrop-filter:var(--sites-toolbar-backdrop-filter);background:var(--sites-toolbar-glass);border:0}._Menu_6xtjb_91 ._MenuActions_6xtjb_104{padding:6px}._MenuDivider_6xtjb_107{border:0;border-top:1px solid var(--widget-border);margin:4px 10px}._MenuAction_6xtjb_104{--button-icon-size:20px;text-align:start;white-space:nowrap;border-radius:9999px;align-items:center;gap:10px;height:auto;min-height:38px;padding:7px 10px;font-size:13px;line-height:20px;text-decoration:none;display:flex}._MenuAction_6xtjb_104>span{justify-content:flex-start}._MenuAction_6xtjb_104 svg{flex-shrink:0}._MenuAction_6xtjb_104:before{transition-property:transform}._Launcher_6xtjb_1[data-mobile]{max-width:calc(100vw - 32px)}._Launcher_6xtjb_1[data-mobile]:not([data-menu-open]){pointer-events:auto}._Launcher_6xtjb_1[data-mobile][data-toolbar-menu-mounted]:before{visibility:hidden}._Menu_6xtjb_91[data-mobile]{max-width:calc(100vw - 32px)}._Menu_6xtjb_91[data-mobile] ._MenuAction_6xtjb_104{white-space:normal}:where([data-mobile-widget-dragging]) ._Launcher_6xtjb_1:before{box-shadow:none}._Widget_lanvw_1{pointer-events:none;height:auto}._CloseButton_lanvw_7[data-variant]{--button-size:36px;--button-icon-size:16px;--button-text-color:var(--widget-text);--button-background-color:var(--widget-surface);--button-background-color-hover:var(--widget-surface);--button-background-color-active:var(--widget-surface);pointer-events:auto;gap:12px;padding-block:0;padding-inline:10px 16px;font-size:13px}._CloseButton_lanvw_7[data-variant]:before{border:1px solid var(--widget-border);-webkit-backdrop-filter:blur(18px)saturate(1.25);backdrop-filter:blur(18px)saturate(1.25);box-shadow:0 4px 20px var(--widget-shadow)}._RemixTooltip_6yzd8_1{color:#fff;pointer-events:auto;text-align:start;background:#3a83f7;border-radius:12px;width:min(300px,100vw - 32px);padding:16px;font-size:13px;line-height:18px;position:absolute;bottom:calc(100% + 22px);right:0;box-shadow:0 12px 24px #0000001f}@media (prefers-reduced-motion:no-preference){._RemixTooltip_6yzd8_1{animation:.36s ease-out _remixTooltipFadeIn_6yzd8_1}}@keyframes _remixTooltipFadeIn_6yzd8_1{0%{opacity:0}to{opacity:1}}._RemixTooltip_6yzd8_1:after{--arrow-inset:max(12px, 50% - 7px + (var(--widget-surface-width) - var(--widget-panel-width)) / 2);background:inherit;content:"";height:14px;bottom:-7px;right:var(--arrow-inset);width:14px;position:absolute;transform:rotate(45deg)}[data-corner$=left] ._RemixTooltip_6yzd8_1{left:0;right:auto}[data-corner$=left] ._RemixTooltip_6yzd8_1:after{left:var(--arrow-inset);right:auto}[data-corner=bottom-center] ._RemixTooltip_6yzd8_1{left:50%;right:auto;translate:-50%}[data-corner=bottom-center] ._RemixTooltip_6yzd8_1:after{right:calc(50% - 7px)}[data-corner^=top] ._RemixTooltip_6yzd8_1{top:calc(100% + 22px);bottom:auto}[data-corner^=top] ._RemixTooltip_6yzd8_1:after{top:-7px;bottom:auto}._RemixTooltip_6yzd8_1 strong{letter-spacing:-.08px;padding-inline-end:24px;font-weight:500;display:block}._RemixTooltip_6yzd8_1 p{margin:8px 0 0}._RemixTooltip_6yzd8_1 ._CloseButton_6yzd8_68[data-variant=ghost]{--button-size:24px;--button-icon-size:16px;--button-text-color:white;--button-ring-color:white;--button-background-color-hover:#0000001f;--button-background-color-active:#0003;inset-inline-end:12px;border-radius:4px;position:absolute;top:12px}._Banner_1iivt_1,._Banner_1iivt_1 *,._Banner_1iivt_1 :before,._Banner_1iivt_1 :after{box-sizing:border-box}._Banner_1iivt_1{all:initial;box-sizing:border-box;color:#171717;--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;pointer-events:auto;z-index:2147483647;background:#fff;border-radius:24px;align-items:center;width:min(640px,100vw - 48px);min-height:68px;padding:12px 14px 12px 20px;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;display:flex;position:fixed;top:24px;left:50%;transform:translate(-50%);box-shadow:0 0 0 1px #0d0d0d1a,0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a}._Content_1iivt_34{flex:1;justify-content:space-between;align-items:center;min-width:0;display:flex}._Message_1iivt_42{overflow-wrap:break-word;flex:1;min-width:0;font-size:14px;line-height:1.5}._OwnerName_1iivt_50{font-weight:600}._Actions_1iivt_54{flex:none;align-items:center;gap:8px;margin-left:16px;display:flex}._EditLink_1iivt_62,._DismissButton_1iivt_63{--scale:.985;font:inherit;isolation:isolate;border:0;justify-content:center;align-items:center;transition:color .15s;display:inline-flex;position:relative}._EditLink_1iivt_62:before,._DismissButton_1iivt_63:before{border-radius:inherit;content:"";will-change:transform;z-index:-1;transition:background-color .15s,opacity .15s,transform .15s;position:absolute;inset:0}._EditLink_1iivt_62{color:#fff;white-space:nowrap;background:0 0;border-radius:9999px;flex:none;gap:6px;min-height:36px;padding:0 16px;font-size:13px;font-weight:400;text-decoration:none}._EditLink_1iivt_62 svg{width:18px;height:18px}._EditLink_1iivt_62:before{background:#171717}._EditLink_1iivt_62:hover:before{background:#2f2f2f}._EditLink_1iivt_62:active:before{transform:scale(var(--scale));background:#3a3a3a}._EditLink_1iivt_62:focus-visible,._DismissButton_1iivt_63:focus-visible{outline-offset:2px;outline:2px solid #0d6efd}._DismissButton_1iivt_63{color:#5f5f5f;cursor:pointer;background:0 0;border-radius:9999px;flex:none;width:36px;height:36px;padding:0;font-size:20px}._DismissButton_1iivt_63:before{opacity:0;transform:scale(var(--scale));background:#f2f2f2}._DismissButton_1iivt_63:hover{color:#171717}._DismissButton_1iivt_63:hover:before{opacity:1;transform:scale(1)}._DismissButton_1iivt_63:active:before{opacity:1;transform:scale(var(--scale));background:#e8e8e8}@media (prefers-reduced-motion:reduce){._EditLink_1iivt_62,._EditLink_1iivt_62:before,._DismissButton_1iivt_63,._DismissButton_1iivt_63:before{transition:none}}@media (max-width:520px){._Banner_1iivt_1{width:calc(100vw - 24px);padding:14px 16px 16px 20px;top:12px}._Content_1iivt_34{flex-wrap:wrap;gap:12px}._Message_1iivt_42{flex-basis:calc(100% - 48px)}._Actions_1iivt_54{display:contents}._EditLink_1iivt_62{order:2}._DismissButton_1iivt_63{order:1;align-self:flex-start}}._ModalHost_1qp8z_1{--widget-composer-width:336px;--sites-toolbar-glass:var(--lightningcss-light,#ffffffc7)var(--lightningcss-dark,#21212199);--sites-toolbar-action-glass:var(--lightningcss-light,#ffffffc7)var(--lightningcss-dark,#18181899);--sites-toolbar-backdrop-filter:blur(52px);--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark;pointer-events:none;background:0 0;border:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;position:fixed;inset:0;overflow:visible}@media (prefers-color-scheme:dark){._ModalHost_1qp8z_1{--lightningcss-light: ;--lightningcss-dark:initial}}._ModalHost_1qp8z_1[data-sharing-open]{pointer-events:auto}._ModalHost_1qp8z_1::backdrop{background:0 0}._ModalHost_1qp8z_1[data-sharing-open] ._FrameHost_1qp8z_34[data-panel-ready]{visibility:visible;pointer-events:auto;transition:none}._FrameHost_1qp8z_34{--sharing-max-height:584px;--sharing-enter-y:16px;--sharing-exit-y:10px;z-index:2147483647;width:min(504px,100vw - 8px);height:min(var(--sharing-max-height), calc(100dvh - 88px));max-height:var(--sharing-max-height);pointer-events:none;visibility:hidden;transition:visibility .18s step-end;position:absolute;bottom:60px;right:12px}._FrameHost_1qp8z_34[data-placement=top]{--sharing-enter-y:-16px;--sharing-exit-y:-10px}._FrameHost_1qp8z_34[data-placement=top]>._Glass_1qp8z_66,._Dialog_1qp8z_67[data-placement=top]{top:12px;bottom:auto}._Frame_1qp8z_34{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark;background:0 0;border:0;width:100%;height:100%;display:block;position:relative}@media (prefers-color-scheme:dark){._Frame_1qp8z_34{--lightningcss-light: ;--lightningcss-dark:initial}}._Frame_1qp8z_34:not([data-user-role=owner],[data-user-role=editor]){--sharing-enter-opacity:1}._Glass_1qp8z_66{background:var(--lightningcss-light,#ffffffb8)var(--lightningcss-dark,var(--sites-toolbar-glass));max-height:calc(100% - 24px);-webkit-backdrop-filter:var(--sites-toolbar-backdrop-filter);backdrop-filter:var(--sites-toolbar-backdrop-filter);pointer-events:none;border-radius:24px;position:absolute;inset:auto 12px 12px;box-shadow:0 0 0 1px var(--lightningcss-light,#0d0d0d1f)var(--lightningcss-dark,#0000),0 8px 32px #0000001a}._FrameHost_1qp8z_34[data-panel-ready]>._Frame_1qp8z_34,._FrameHost_1qp8z_34[data-panel-ready]>._Glass_1qp8z_66{animation:.18s both _sharing-exit_1qp8z_1}._ModalHost_1qp8z_1[data-sharing-open] ._FrameHost_1qp8z_34[data-panel-ready]>._Frame_1qp8z_34,._ModalHost_1qp8z_1[data-sharing-open] ._FrameHost_1qp8z_34[data-panel-ready]>._Glass_1qp8z_66{animation:.24s cubic-bezier(.2,.8,.2,1) both _sharing-enter_1qp8z_1}._Root_1qp8z_109{--ink:var(--lightningcss-light,#171717)var(--lightningcss-dark,#f3f3f3);--border:var(--lightningcss-light,#0d0d0d33)var(--lightningcss-dark,#ffffff40);--surface:var(--lightningcss-light,#fff)var(--lightningcss-dark,#242424);--hover:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f);--active:var(--lightningcss-light,#0000001a)var(--lightningcss-dark,#ffffff2e);--muted:var(--lightningcss-light,#777)var(--lightningcss-dark,#aaa);--error:var(--lightningcss-light,#b42828)var(--lightningcss-dark,#ff9191);color:var(--ink);pointer-events:none;--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark;font:14px/1.45 ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;position:fixed;inset:0}@media (prefers-color-scheme:dark){._Root_1qp8z_109{--lightningcss-light: ;--lightningcss-dark:initial}}._Root_1qp8z_109 *{box-sizing:border-box}._Dialog_1qp8z_67{pointer-events:auto;background:0 0;border:0;border-radius:24px;outline:none;flex-direction:column;max-height:calc(100% - 24px);padding:0;display:flex;position:absolute;inset:auto 12px 12px;overflow:hidden}._Dialog_1qp8z_67[data-state=closed]{pointer-events:none;animation:.18s both _sharing-retain_1qp8z_1}._Body_1qp8z_154{flex-direction:column;min-height:0;display:flex}._Header_1qp8z_159{flex-direction:column;flex-shrink:0;padding:20px 20px 0;display:flex}._AccessList_1qp8z_165{--fade-top:0px;--fade-bottom:0px;overscroll-behavior:contain;min-height:0;-webkit-mask-image:linear-gradient(to bottom, transparent, black var(--fade-top), black calc(100% - var(--fade-bottom)), transparent);mask-image:linear-gradient(to bottom, transparent, black var(--fade-top), black calc(100% - var(--fade-bottom)), transparent);overflow:auto}._AccessList_1qp8z_165[data-scroll-cutoff]{--fade-top:16px}._AccessList_1qp8z_165[data-scroll-cutoff-below]{--fade-bottom:16px}._AccessListContent_1qp8z_186{padding-inline:20px}._Title_1qp8z_189{overflow-wrap:anywhere;margin:0 0 24px;font-size:18px;font-weight:500;line-height:1.3}._Dialog_1qp8z_67[data-read-only] ._Title_1qp8z_189{margin-bottom:0}._Section_1qp8z_199{margin:20px 0 8px;font-size:14px;font-weight:400}._Results_1qp8z_204{width:var(--radix-popover-trigger-width);max-width:var(--radix-popover-content-available-width);max-height:min(256px, var(--radix-popover-content-available-height));z-index:1;background:var(--lightningcss-light,#fff)var(--lightningcss-dark,#292929);border-radius:14px;outline:none;padding:6px;overflow:auto;box-shadow:0 8px 28px #00000029,0 0 0 1px var(--lightningcss-light,#00000014)var(--lightningcss-dark,#ffffff1f)}._Result_1qp8z_204{text-align:start;white-space:normal;width:100%;height:auto;min-height:52px;color:var(--ink);border-radius:8px;gap:10px;padding:8px;font-weight:400}._Result_1qp8z_204[data-variant]{--button-background-color-hover:var(--hover);--button-background-color-active:var(--active)}._Result_1qp8z_204>span{justify-content:flex-start}._Result_1qp8z_204:not(:disabled):hover:before{background:var(--hover)}._Result_1qp8z_204:before{transition-property:transform}._Person_1qp8z_248{align-items:center;gap:12px;padding:8px 0;display:flex}._GroupAvatar_1qp8z_254{--button-icon-size:16px}._GroupAvatar_1qp8z_254>svg{width:16px;height:16px}._Identity_1qp8z_263{overflow-wrap:anywhere;flex-direction:column;flex:1;min-width:0;display:flex}._Secondary_1qp8z_270{color:var(--muted);font-size:13px}._Role_1qp8z_274{max-width:130px;margin-inline-end:-8px}._Role_1qp8z_274[data-variant]{color:var(--muted)}._RoleMenu_1qp8z_283{--select-menu-width:240px;text-wrap:pretty}._AccessMode_1qp8z_288{align-self:flex-start;height:44px;margin-inline-start:-8px;padding:0 8px;padding-inline-end:13px}._AccessModeLabel_1qp8z_296{align-items:center;gap:8px;min-height:44px;margin:0;display:flex}._AccessModeIcon_1qp8z_303{flex-shrink:0;justify-content:center;align-items:center;width:28px;height:28px;display:inline-flex}._AccessModeIcon_1qp8z_303>svg{width:20px;height:20px}._ReadOnlyRole_1qp8z_316{color:var(--muted);padding-inline-end:4px}._Footer_1qp8z_320{flex-shrink:0;justify-content:flex-end;gap:8px;padding:20px;display:flex}._FooterLeading_1qp8z_327{margin-inline-end:auto}._AdvancedHeader_1qp8z_330 ._Title_1qp8z_189{margin-bottom:16px}._AdvancedFooter_1qp8z_333{padding-top:16px}._InviteRole_1qp8z_337{height:var(--tag-input-height);color:var(--muted);flex-shrink:0}._InviteRole_1qp8z_337[data-variant]{gap:6px;padding-inline:10px 6px}._RemixSetting_1qp8z_347{align-items:center;gap:8px;padding-block:8px 12px;display:flex}._RemixInfo_1qp8z_353{color:var(--muted);cursor:default;background:0 0;border:0;flex-shrink:0;padding:2px;display:inline-flex}._RemixExplanation_1qp8z_362{--tooltip-border-radius:12px;--tooltip-compact-padding:12px 16px;--tooltip-line-height:1.45}._RemixSwitch_1qp8z_367{flex-shrink:0;margin-inline-start:auto}._RemixSetting_1qp8z_347>label{cursor:pointer}._Copy_1qp8z_374{color:var(--ink);background:0 0;gap:8px;padding:0 16px;font-size:13px}._Copy_1qp8z_374[data-variant]{--button-background-color-hover:var(--hover);--button-background-color-active:var(--active)}._Copy_1qp8z_374:before{box-shadow:inset 0 0 0 1px var(--border)}._Error_1qp8z_391{color:var(--error);flex-shrink:0;margin:12px 20px;font-size:13px}._Notice_1qp8z_397{color:var(--muted);padding:8px 0;font-size:13px}._SearchHint_1qp8z_402{margin:0;padding:12px}._SearchLoading_1qp8z_406{place-items:center;min-height:calc(1lh + 16px);display:grid}._EmptyResults_1qp8z_412{color:var(--muted);margin:0;padding:12px;font-size:14px;line-height:20px}@media (max-width:480px){._Role_1qp8z_274{max-width:105px}}@keyframes _sharing-retain_1qp8z_1{0%,to{visibility:visible}}@keyframes _sharing-enter_1qp8z_1{0%{opacity:var(--sharing-enter-opacity,0);transform:translateY(var(--sharing-enter-y))}to{opacity:1;transform:translateY(0)}}@keyframes _sharing-exit_1qp8z_1{0%{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(var(--sharing-exit-y))}}@media (prefers-reduced-motion:reduce){._Dialog_1qp8z_67[data-state],._ModalHost_1qp8z_1 ._FrameHost_1qp8z_34>._Frame_1qp8z_34,._ModalHost_1qp8z_1 ._FrameHost_1qp8z_34>._Glass_1qp8z_66{animation:none}._FrameHost_1qp8z_34{transition:none}}._Avatar_1qach_1{--avatar-radius:50%;--avatar-font-size-scaling:.4;--avatar-overflow-font-size-scaling-one:.4;--avatar-overflow-font-size-scaling-two:.32;--avatar-overflow-font-size-scaling-three:.28;--avatar-image-border-color:var(--lightningcss-light,#00000014)var(--lightningcss-dark,#ffffff1f);--font-weight-semibold:600;width:var(--avatar-size);height:var(--avatar-size);border-radius:var(--avatar-radius);transition:background-color .3s var(--cubic-enter);-webkit-user-select:none;user-select:none;flex-grow:0;flex-shrink:0;justify-content:center;align-items:center;display:inline-flex;position:relative;overflow:hidden}._Avatar_1qach_1[type=button]{cursor:pointer}._Avatar_1qach_1[type=button]:focus-visible{outline:2px solid var(--avatar-ring-color);outline-offset:2px}._Avatar_1qach_1{color:var(--lightningcss-light,#5d5d5d)var(--lightningcss-dark,#d1d1d1);background-color:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f)}._AvatarImageContainer_1qach_47{border-radius:inherit}._AvatarImageContainer_1qach_47:after{border:1px solid var(--avatar-image-border-color);border-radius:inherit;content:"";pointer-events:none;display:block;position:absolute;inset:0}._AvatarImage_1qach_47{border-radius:inherit;object-fit:cover;opacity:0;pointer-events:none;width:100%;height:100%;transition:all .15s;position:absolute;top:0;left:0}._AvatarImage_1qach_47[data-loaded]{opacity:1}._AvatarInitial_1qach_79{font-size:calc(var(--avatar-size) * var(--avatar-font-size-scaling));font-weight:var(--font-weight-semibold)}._AvatarInitial_1qach_79[data-letter-count="2"]{font-size:calc(var(--avatar-size) * var(--avatar-font-size-scaling) * .75)}._AvatarOverflowCount_1qach_90{font-size:calc(var(--avatar-size) * var(--avatar-overflow-font-size-scaling-three));font-weight:var(--font-weight-semibold)}._AvatarOverflowCount_1qach_90[data-letter-count="2"]{font-size:calc(var(--avatar-size) * var(--avatar-overflow-font-size-scaling-two))}._AvatarOverflowCount_1qach_90[data-letter-count="1"]{font-size:calc(var(--avatar-size) * var(--avatar-overflow-font-size-scaling-one))}._AvatarOverflowCountSymbol_1qach_113{top:calc(-1 * var(--avatar-size) / 24);margin-left:-1px;position:relative}._AvatarIcon_1qach_119{font-size:calc(var(--avatar-size) * .7);flex-grow:0;flex-shrink:0;display:block}._Trigger_168v9_3{color:var(--lightningcss-light,#171717)var(--lightningcss-dark,#f3f3f3);border-radius:8px;gap:8px;max-width:100%;font-size:14px}._Trigger_168v9_3[data-pill]{border-radius:9999px}._Trigger_168v9_3[data-variant],._Action_168v9_14[data-variant]{--button-background-color-active:var(--lightningcss-light,#0000001a)var(--lightningcss-dark,#ffffff2e)}._Trigger_168v9_3:before{background:0 0}._Trigger_168v9_3[aria-busy=true]{opacity:1;cursor:wait}._Trigger_168v9_3:not(:disabled):hover:before,._Trigger_168v9_3[data-state=open]:before{background:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f)}._Trigger_168v9_3 ._Chevron_168v9_31{color:var(--lightningcss-light,#777)var(--lightningcss-dark,#aaa);flex-shrink:0;width:14px;height:14px}._Label_168v9_37{text-overflow:ellipsis;overflow:hidden}._Thumbnail_168v9_41{background:0 0;border-radius:8px;flex-shrink:0;justify-content:center;align-items:center;width:28px;height:28px;display:inline-flex}._Thumbnail_168v9_41 svg{width:20px;height:20px}._MenuList_168v9_55{pointer-events:auto;box-sizing:border-box;min-width:min(220px,100vw - 24px);width:var(--select-menu-width,max-content);max-width:min(280px,100vw - 24px);max-height:var(--radix-popover-content-available-height);color:var(--lightningcss-light,#171717)var(--lightningcss-dark,#f3f3f3);transform-origin:var(--radix-popover-content-transform-origin);-webkit-user-select:none;user-select:none;z-index:1;background:var(--lightningcss-light,#fff)var(--lightningcss-dark,#292929);border-radius:14px;font:14px/20px ui-sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;animation:.18s cubic-bezier(.19,1,.22,1) _enter_168v9_1;overflow:auto;box-shadow:0 8px 28px #00000029,0 0 0 1px var(--lightningcss-light,#00000014)var(--lightningcss-dark,#ffffff1f)}._MenuList_168v9_55:focus,._OptionsList_168v9_81:focus{outline:none}._OptionsList_168v9_81{padding:6px}._Option_168v9_81{cursor:pointer;overflow-wrap:anywhere;padding:10px;scroll-margin:15px 0;position:relative}._Option_168v9_81:before{content:"";opacity:0;background:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f);border-radius:8px;display:block;position:absolute;inset:0;transform:scale(.98)}._Option_168v9_81[data-highlight]:before{opacity:1;transform:scale(1)}._Option_168v9_81[data-highlight]:active:before{transform:scale(.98)}._Option_168v9_81[data-disabled]{cursor:not-allowed}._Option_168v9_81[data-disabled] ._OptionText_168v9_115>:first-child,._Option_168v9_81[data-disabled] ._OptionInner_168v9_116>svg,._Option_168v9_81[data-disabled] ._OptionIndicatorSlot_168v9_117{opacity:.5}._Option_168v9_81[data-disabled]:before{display:none}._Option_168v9_81[aria-busy=true]{cursor:wait;opacity:1}._Option_168v9_81[aria-busy=true]:before{display:block}._OptionInner_168v9_116{align-items:center;gap:10px;display:flex;position:relative}._OptionInner_168v9_116>svg{flex-shrink:0;width:20px;height:20px}._OptionText_168v9_115{flex-direction:column;flex:1;min-width:0;display:flex}._Description_168v9_147{white-space:normal;color:var(--lightningcss-light,#6e6e6e)var(--lightningcss-dark,#aaa);font-size:12px;font-weight:400;line-height:18px}._OptionIndicatorSlot_168v9_117{flex-shrink:0;width:16px;height:16px;margin-inline-start:auto;display:flex}._OptionIndicatorSlot_168v9_117 svg{width:16px;height:16px}._ActionsContainer_168v9_165{border-top:1px solid var(--lightningcss-light,#eee)var(--lightningcss-dark,#444);padding:6px}._Action_168v9_14{color:var(--lightningcss-light,#b42318)var(--lightningcss-dark,#ff8583);border-radius:8px;width:100%;font-size:14px}._Action_168v9_14>span{justify-content:flex-start}._Action_168v9_14:before{transition-property:transform}._ActionIndicator_168v9_181{color:var(--lightningcss-light,#6e6e6e)var(--lightningcss-dark,#aaa);margin-inline-start:auto}._Action_168v9_14:not(:disabled):hover:before{background:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f)}@keyframes _enter_168v9_1{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}@media (prefers-reduced-motion:reduce){._MenuList_168v9_55{animation:none}}._Container_kb33f_2{--tag-input-padding-inline-start:var(--tag-input-tag-spacing);--tag-input-padding-inline-end:var(--tag-input-tag-spacing);min-height:calc((var(--min-rows) * var(--tag-input-height)) + ((var(--min-rows) + 1) * var(--tag-input-tag-spacing)));padding:var(--tag-input-tag-spacing) var(--tag-input-padding-inline-end) var(--tag-input-tag-spacing) var(--tag-input-padding-inline-start);cursor:text;border-radius:8px;outline:0;transition:box-shadow .15s;position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px var(--lightningcss-light,#0d0d0d29)var(--lightningcss-dark,#ffffff40)}._Container_kb33f_2[data-disabled]{pointer-events:none}@media (hover:hover){._Container_kb33f_2:not([data-disabled]):hover{box-shadow:inset 0 0 0 1px var(--lightningcss-light,#afafaf)var(--lightningcss-dark,#5d5d5d)}}._Container_kb33f_2:not([data-disabled])[data-focused]{box-shadow:inset 0 0 0 1px var(--lightningcss-light,#0d0d0d80)var(--lightningcss-dark,#ffffff80)}._Container_kb33f_2[data-empty]:not([data-has-start-adornment]){--tag-input-padding-inline-start:12px}._Container_kb33f_2[data-empty]:not([data-has-end-adornment]){--tag-input-padding-inline-end:12px}._Container_kb33f_2:where([data-size=md]){--tag-input-font-size:14px;--tag-input-height:20px;--tag-input-tag-spacing:6px}._Container_kb33f_2:where([data-size=lg]){--tag-input-font-size:14px;--tag-input-height:24px;--tag-input-tag-spacing:6px}._Container_kb33f_2:where([data-size=xl]){--tag-input-font-size:16px;--tag-input-height:24px;--tag-input-tag-spacing:8px}._Container_kb33f_2:where([data-size="2xl"]){--tag-input-font-size:16px;--tag-input-height:28px;--tag-input-tag-spacing:8px}._Container_kb33f_2:where([data-size="3xl"]){--tag-input-font-size:16px;--tag-input-height:32px;--tag-input-tag-spacing:8px}._TagInput_kb33f_89{margin-bottom:calc(var(--tag-input-tag-spacing) * -1);font-size:0;line-height:0;display:flow-root}._StartAdornment_kb33f_96,._EndAdornment_kb33f_97{min-width:var(--tag-input-height);max-width:calc(100% - var(--tag-input-tag-spacing));height:var(--tag-input-height);color:#8f8f8f;font-size:var(--tag-input-font-size);justify-content:center;align-items:center;line-height:1;display:inline-flex}:is(._StartAdornment_kb33f_96,._EndAdornment_kb33f_97)>*{max-width:100%}._StartAdornment_kb33f_96{margin-right:var(--tag-input-tag-spacing);margin-bottom:var(--tag-input-tag-spacing);vertical-align:top}._EndAdornment_kb33f_97{margin-bottom:var(--tag-input-tag-spacing);margin-left:var(--tag-input-tag-spacing);float:right}._Tag_kb33f_89{max-width:100%;height:var(--tag-input-height);margin-right:var(--tag-input-tag-spacing);margin-bottom:var(--tag-input-tag-spacing);color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#fff);cursor:pointer;background-color:var(--lightningcss-light,#0000000f)var(--lightningcss-dark,#ffffff1f);border-radius:8px;outline:none;align-items:center;padding:4px 4px 4px 8px;line-height:1.4;transition:background-color .15s;display:inline-flex;overflow:hidden;box-shadow:inset 0 0 0 1px var(--lightningcss-light,#00000014)var(--lightningcss-dark,#ffffff1f)}@media (hover:hover){._Tag_kb33f_89:hover{background-color:var(--lightningcss-light,#0000001a)var(--lightningcss-dark,#ffffff2e)}}._Tag_kb33f_89:focus{background-color:var(--lightningcss-light,#0000001a)var(--lightningcss-dark,#ffffff2e)}._Container_kb33f_2[data-disabled] ._Tag_kb33f_89{color:#8f8f8f}._Tag_kb33f_89[data-invalid]{color:var(--lightningcss-light,#ba2623)var(--lightningcss-dark,#fa423e);background-color:#ffd9d9}@media (hover:hover){._Tag_kb33f_89[data-invalid]:hover{background-color:#ffc6c5}}._Tag_kb33f_89[data-invalid]:focus{background-color:#ffc6c5}._Tag_kb33f_89[data-duplicate]{animation:.5s _shake_kb33f_1}._Tag_kb33f_89 ._TagRemove_kb33f_177{appearance:none;font:inherit;cursor:pointer;background:0 0;border:0;padding:0}._Tag_kb33f_89 ._TagRemove_kb33f_177:focus-visible{outline-offset:2px;outline:2px solid}._Tag_kb33f_89 ._TagRemove_kb33f_177{color:inherit;opacity:.7;align-items:center;margin-left:4px;transition:opacity .15s;display:flex;position:relative}@media (hover:hover){._Tag_kb33f_89 ._TagRemove_kb33f_177:hover{opacity:1}}._TagContent_kb33f_205{white-space:nowrap;align-items:center;min-width:0;max-width:100%;line-height:1;display:flex;overflow:hidden}._TagValue_kb33f_215{min-width:0;max-width:100%;font-size:var(--tag-input-font-size);text-overflow:ellipsis;white-space:nowrap;line-height:normal;display:block;overflow:hidden}._TagValue_kb33f_215>*{vertical-align:top}._InputContainer_kb33f_230{max-width:100%;margin-bottom:var(--tag-input-tag-spacing);vertical-align:top;align-items:center;display:inline-flex}._InputWrapper_kb33f_238{width:100%;overflow:hidden}._InputMeasure_kb33f_243{font-size:var(--tag-input-font-size);visibility:hidden;white-space:nowrap;position:absolute}._Input_kb33f_230{min-width:20px;height:var(--tag-input-height);box-shadow:none;color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#dcdcdc);font-family:inherit;font-size:var(--tag-input-font-size);white-space:nowrap;background:0 0;border:0;border-radius:0;padding:0;line-height:1.4;display:block}._Input_kb33f_230:focus{outline:0}._Input_kb33f_230::-webkit-search-cancel-button{appearance:none}._Input_kb33f_230::placeholder,._Input_kb33f_230:disabled{color:#8f8f8f}._Input_kb33f_230:-webkit-any(:-webkit-autofill,:-webkit-autofill){color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#dcdcdc)!important;-webkit-text-fill-color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#dcdcdc)!important;transition:background-color 0s 50000s,box-shadow 0s 50000s,filter 0s 50000s!important}._Input_kb33f_230:is(:autofill,:autofill){color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#dcdcdc)!important;-webkit-text-fill-color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#dcdcdc)!important;transition:background-color 0s 50000s,box-shadow 0s 50000s,filter 0s 50000s!important}._Limit_kb33f_296{color:var(--lightningcss-light,#282828)var(--lightningcss-dark,#dcdcdc);font-variant-numeric:tabular-nums;width:100%;margin-top:2px;font-size:12px}._Limit_kb33f_296>span{margin-inline:1px}._Limit_kb33f_296{text-align:right}@keyframes _shake_kb33f_1{0%{transform:translate(0)}20%,60%{transform:translate(-5px)}40%,80%{transform:translate(5px)}to{transform:translate(0)}}._Container_244h6_2{--switch-track-width:32px;--switch-track-height:19px;--switch-track-color:var(--lightningcss-light,#dfdfdf)var(--lightningcss-dark,#414141);--switch-track-color-hover:var(--lightningcss-light,#cdcdcd)var(--lightningcss-dark,#4f4f4f);--switch-track-color-checked:var(--lightningcss-light,#181818)var(--lightningcss-dark,#0285ff);--switch-track-color-checked-disabled:var(--lightningcss-light,#afafaf)var(--lightningcss-dark,#003f7a);--switch-track-color-disabled:var(--lightningcss-light,#ededed)var(--lightningcss-dark,#303030);--switch-thumb-offset:3px;--switch-thumb-size:calc(var(--switch-track-height) - 2 * var(--switch-thumb-offset));--switch-thumb-shadow:0 1px 2px #0003;--switch-thumb-color:#fff;--switch-thumb-color-disabled:var(--lightningcss-light,#fff)var(--lightningcss-dark,#cdcdcd);--switch-label-gap:8px;-webkit-user-select:none;user-select:none;font-size:14px;line-height:20px;display:flex;position:relative}._Container_244h6_2[data-has-label]{align-items:flex-start}._Container_244h6_2[data-label-position=start]{flex-direction:row-reverse}._Track_244h6_34{width:var(--switch-track-width);max-width:var(--switch-track-width);height:var(--switch-track-height);background:var(--switch-track-color);cursor:pointer;border:0;border-radius:9999px;flex-shrink:0;padding:0;transition:background-color .25s cubic-bezier(.65,0,.35,1);position:relative}@media (hover:hover){._Track_244h6_34:where(:not([data-disabled],[data-state=checked])):hover{background:var(--switch-track-color-hover)}}[data-has-label] ._Track_244h6_34{top:var(--switch-track-top-offset,1px)}._Track_244h6_34:focus-visible{outline-offset:2px;outline:2px solid var(--lightningcss-light,#0169cc)var(--lightningcss-dark,#0285ff)}._Track_244h6_34[data-state=checked]{background:var(--switch-track-color-checked)}._Track_244h6_34[data-disabled],._Track_244h6_34[aria-disabled=true]{background:var(--switch-track-color-disabled);cursor:not-allowed}:is(._Track_244h6_34[data-disabled],._Track_244h6_34[aria-disabled=true])[data-state=checked]{background:var(--switch-track-color-checked-disabled)}._Thumb_244h6_82{top:var(--switch-thumb-offset);left:var(--switch-thumb-offset);width:var(--switch-thumb-size);height:var(--switch-thumb-size);background:var(--switch-thumb-color);box-shadow:var(--switch-thumb-shadow);border-radius:9999px;transition:transform .25s cubic-bezier(.65,0,.35,1);display:block;position:absolute}[data-state=checked] ._Thumb_244h6_82{transform:translateX(calc(var(--switch-track-width) - var(--switch-thumb-size) - var(--switch-thumb-offset) * 2))}._Thumb_244h6_82[data-disabled]{background:var(--switch-thumb-color-disabled);box-shadow:none}._Label_244h6_109{cursor:pointer}[data-label-position=end] ._Label_244h6_109{padding-left:var(--switch-label-gap)}[data-label-position=start] ._Label_244h6_109{padding-right:var(--switch-label-gap)}[data-disabled] ._Label_244h6_109{cursor:not-allowed}
+/*$vite$:1*/</style><div class="_Theme_1ewnz_2"><div class="_WidgetExit_1nh4p_69 _TransitionGroupChild_1d6a5_1"><div class="_Widget_1nh4p_1" data-corner="bottom-right" data-tucked="" data-peek-phase="away" data-quiet-tuck="" dir="ltr" lang="pt-PT" style="left: 1337px; top: 709px; --widget-snap-duration: 280ms; --widget-surface-width: 137px; --widget-surface-height: 36px; --corner-x-direction: 1; --corner-y-direction: 1; --tuck-x: 125px; --tuck-y: 24px;"><div class="_WidgetEntrance_1nh4p_56 _TransitionGroupChild_1d6a5_1"><div class="_Panel_1nh4p_203"><div class="_Shell_1nh4p_82"><div class="_ShellControls_1nh4p_120" inert=""><div class="_Layout_1a5g1_1 _ShellLayout_1nh4p_252" data-item-anchor="end" data-clip="true" data-dimension="width" style="--tg-will-change: auto; --tg-enter-opacity: 1; --tg-enter-transform: none; --tg-enter-filter: none; --tg-enter-duration: 140ms; --tg-enter-delay: 80ms; --tg-enter-timing-function: ease; --tg-exit-opacity: 0; --tg-exit-transform: none; --tg-exit-filter: none; --tg-exit-duration: 120ms; --tg-exit-delay: 0ms; --tg-exit-timing-function: ease; --tg-initial-opacity: 0; --tg-initial-transform: none; --tg-initial-filter: none; --tg-layout-enter-duration: 360ms; --tg-layout-enter-delay: 0ms; --tg-layout-enter-timing-function: cubic-bezier(0.2, 1.25, 0.3, 1); --tg-layout-exit-duration: 280ms; --tg-layout-exit-delay: 0ms; --tg-layout-exit-timing-function: cubic-bezier(0.2, 1.25, 0.3, 1); --tg-layout-move-duration: 280ms; --tg-layout-move-delay: 0ms; --tg-layout-move-timing-function: cubic-bezier(0.2, 1.25, 0.3, 1);"><div class="_TransitionItem_1a5g1_34 _ShellContent_1nh4p_248 _TransitionGroupChild_1d6a5_1"><div class="_LauncherRow_1nh4p_153"><a href="https://chatgpt.com/sites/appgprj_6af11bcc8c40819191ab0e6888a72484/edit?account_id=personal&amp;conversation_id=6af11a2c-7ed0-83eb-b878-ba233f1cc69d&amp;codex_thread_id=01a1bdce-45da-77ab-95c7-e6bf0360f069&amp;browser_url=https%3A%2F%2Fnutricao-dietetica-uc00596.grandosprey1.chatgpt.site%2F" target="_blank" rel="noopener noreferrer" aria-label="Editar o site no ChatGPT" data-state="closed" class="_Button_milvu_1 _LogoButton_1nh4p_203" data-color="primary" data-variant="ghost" data-pill="" data-uniform="" data-size="lg"><span class="_ButtonInner_milvu_128"><span class="_LauncherLogo_1nh4p_325" aria-hidden="true"><img alt="" width="18" height="18" class="_Image_1l1xj_1" draggable="false" src="https://nutricao-dietetica-uc00596.grandosprey1.chatgpt.site/_sites/dispatch-assets/app-openai.svg" data-loaded=""></span></span></a><button class="_Launcher_1nh4p_130" type="button" aria-expanded="false" aria-keyshortcuts="ArrowUp ArrowDown ArrowLeft ArrowRight" aria-label="Editar site" data-state="closed"><span class="_LauncherLabel_1nh4p_157">Editar site</span></button></div></div></div><button aria-hidden="false" tabindex="0" aria-label="Ocultar barra de ferramentas" data-state="closed" type="button" class="_Button_milvu_1 _LauncherDismissButton_1nh4p_491" data-color="primary" data-variant="ghost" data-pill="" data-uniform="" data-size="lg"><span class="_ButtonInner_milvu_128"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" clip-rule="evenodd"></path></svg></span></button></div></div></div></div><button class="_CornerTarget_1nh4p_167" type="button" aria-label="Voltar a mostrar a barra de ferramentas" aria-keyshortcuts="Alt+M" data-state="closed"></button></div></div></div><div class="_Theme_1ewnz_2 _Portal_1ewnz_35" lang="pt-PT" dir="ltr"></div></template></div></body><div id="aiFabShadowRoot" data-fab-type="react" style="opacity: 1;"><template shadowrootmode="open"><div id="fab-react-root"><div class="fab-root"><div class="acrobat-button-container " style="bottom: 36px;"><div class="acrobat-button " role="button" aria-label="Obtenha resumos e insights importantes usando o Assistente de IA"><button class="close-btn  "><svg class="close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_8552_7892" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14" style="mask-type: alpha;"><path d="M7.82482 7.00034L10.6374 4.18778C10.7893 4.03592 10.7893 3.78969 10.6374 3.63783L10.3625 3.36292C10.2106 3.21106 9.96446 3.21106 9.81255 3.36292L6.99995 6.17548L4.18734 3.36292C4.03543 3.21106 3.78933 3.21106 3.63743 3.36292L3.36247 3.63783C3.21056 3.78969 3.21056 4.03592 3.36247 4.18778L6.17507 7.00034L3.36247 9.81295C3.21056 9.96481 3.21056 10.2111 3.36247 10.3629L3.63743 10.6378C3.78933 10.7897 4.03543 10.7897 4.18734 10.6378L6.99995 7.82526L9.81255 10.6378C9.96446 10.7897 10.2106 10.7897 10.3625 10.6378L10.6374 10.3629C10.7893 10.2111 10.7893 9.96481 10.6374 9.81295L7.82482 7.00034Z" fill="#222222"></path></mask><g mask="url(#mask0_8552_7892)"><rect width="14" height="14"></rect></g></svg><svg class="burger-icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_12188_28876" maskUnits="userSpaceOnUse" x="3" y="3" width="15" height="14" style="mask-type: alpha;"><path d="M15.1285 12.8008H6.37852C6.08867 12.8008 5.85352 13.0359 5.85352 13.3258C5.85352 13.6156 6.08867 13.8508 6.37852 13.8508H15.1285C15.4184 13.8508 15.6535 13.6156 15.6535 13.3258C15.6535 13.0359 15.4184 12.8008 15.1285 12.8008Z" fill="#292929"></path><path d="M6.37852 6.85078H15.1285C15.4184 6.85078 15.6535 6.61562 15.6535 6.32578C15.6535 6.03594 15.4184 5.80078 15.1285 5.80078H6.37852C6.08867 5.80078 5.85352 6.03594 5.85352 6.32578C5.85352 6.61562 6.08867 6.85078 6.37852 6.85078Z" fill="#292929"></path><path d="M15.1285 9.30078H6.37852C6.08867 9.30078 5.85352 9.53594 5.85352 9.82578C5.85352 10.1156 6.08867 10.3508 6.37852 10.3508H15.1285C15.4184 10.3508 15.6535 10.1156 15.6535 9.82578C15.6535 9.53594 15.4184 9.30078 15.1285 9.30078Z" fill="#292929"></path></mask><g mask="url(#mask0_12188_28876)"><rect x="3.75391" y="3" width="14" height="14" fill="#464646"></rect></g></svg></button><div class="icon-container" role="button" tabindex="0" aria-label="Open AI Assistant"><svg id="ImportedIcons" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="fab-svg-icon"><path d="m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z" fill="var(--iconRed, #d31510)" fill-rule="evenodd"></path></svg></div></div><div class="tooltip-text fab-home-tooltip "><svg class="fab-home-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 22 22" aria-hidden="true" focusable="false"><path d="m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z" fill="#D6373F" fill-rule="evenodd"></path></svg><span class="tooltip-text-content">Confira a nova página inicial do Acrobat no navegador</span></div><div class="draggable-handle "><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.60039 13.0699C5.26313 13.0699 5.80039 12.5327 5.80039 11.8699C5.80039 11.2072 5.26313 10.6699 4.60039 10.6699C3.93765 10.6699 3.40039 11.2072 3.40039 11.8699C3.40039 12.5327 3.93765 13.0699 4.60039 13.0699Z" fill="#292929"></path><path d="M4.60039 8.27109C5.26313 8.27109 5.80039 7.73384 5.80039 7.07109C5.80039 6.40835 5.26313 5.87109 4.60039 5.87109C3.93765 5.87109 3.40039 6.40835 3.40039 7.07109C3.40039 7.73384 3.93765 8.27109 4.60039 8.27109Z" fill="#292929"></path><path d="M4.60039 3.47031C5.26313 3.47031 5.80039 2.93305 5.80039 2.27031C5.80039 1.60757 5.26313 1.07031 4.60039 1.07031C3.93765 1.07031 3.40039 1.60757 3.40039 2.27031C3.40039 2.93305 3.93765 3.47031 4.60039 3.47031Z" fill="#292929"></path><path d="M9.4002 13.0699C10.0629 13.0699 10.6002 12.5327 10.6002 11.8699C10.6002 11.2072 10.0629 10.6699 9.4002 10.6699C8.73745 10.6699 8.2002 11.2072 8.2002 11.8699C8.2002 12.5327 8.73745 13.0699 9.4002 13.0699Z" fill="#292929"></path><path d="M9.4002 8.27109C10.0629 8.27109 10.6002 7.73384 10.6002 7.07109C10.6002 6.40835 10.0629 5.87109 9.4002 5.87109C8.73745 5.87109 8.2002 6.40835 8.2002 7.07109C8.2002 7.73384 8.73745 8.27109 9.4002 8.27109Z" fill="#292929"></path><path d="M9.4002 3.47031C10.0629 3.47031 10.6002 2.93305 10.6002 2.27031C10.6002 1.60757 10.0629 1.07031 9.4002 1.07031C8.73745 1.07031 8.2002 1.60757 8.2002 2.27031C8.2002 2.93305 8.73745 3.47031 9.4002 3.47031Z" fill="#292929"></path></svg></div></div></div></div><style>
+    .acrobat-button-container {
+        position: fixed;
+        right: 0;
+        bottom: 36px;
+        z-index: 2147483646;
+        visibility: visible !important;
+        pointer-events: all;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    @media print {
+        .acrobat-button-container {
+            display: none !important;
+        }
+    }
+
+    .acrobat-button {
+        position: relative;
+        background: white;
+        display: flex;
+        align-items: center;
+        pointer-events: all;
+        touch-action: none;
+        box-shadow: 0px 2px 8px 0px #00000029;
+        height: 34px;
+        width: 34px;
+        border: 1px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        background-image: linear-gradient(white, white),
+                        linear-gradient(95.85deg, #D73220 0%, #D92361 33%, #7155FA 100%);
+        border-radius: 18px;
+        justify-content: right;
+        margin-right: var(--fab-margin-right, 28px);
+        overflow: hidden;
+    }
+
+    .acrobat-button-container-transparent {
+        opacity: 0.4 !important;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .acrobat-button-container-transparent:hover,
+    .acrobat-button-container-transparent:focus,
+    .acrobat-button-container-transparent:active {
+        opacity: 1;
+    }
+
+    .acrobat-button > svg {
+        flex-shrink: 0;
+        margin: 4px 5px 5px 5px;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+    .acrobat-button:has(.close-btn.open),
+    .expand-acrobat-button {
+        width: 64px;
+    }
+
+    .disabled {
+        background: #B1B1B1;
+    }
+
+    .tooltip-text {
+        width: 160px;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #FFFFFF;
+        color: #292929;
+        border-radius: 7px;
+        padding: 4px 1px 5px 9px;
+        position: absolute;
+        z-index: 1;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        transition: opacity 0.3s, visibility 0s linear 2s;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.12));
+    }
+
+    .tooltip-text::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 100%;
+       transform: translateY(-50%);
+       border-width: 6px;
+       border-style: solid;
+       border-color: transparent transparent transparent #fff;
+    }
+
+    .show-tooltip {
+        visibility: visible;
+        opacity: 1;
+        line-height: 1.5;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        transition: opacity 0.3s;
+        transition-delay: 500ms;
+    }
+
+    .close-btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-btn svg {
+        fill: #464646;
+    }
+
+    .close-btn.showCloseButton {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+
+    .fab-view-settings-dialog {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+    }
+
+    .close-btn:hover {
+        background: #E6E6E6;
+        border-radius: 50%; /* Keep original circular hover */
+        cursor: pointer;
+    }
+
+    .fab-view-settings-dialog.showDialog {
+        display: block;
+    }
+    .close-btn .burger-icon {
+        display: inline;
+        margin-bottom: 2px;
+    }
+    .close-btn .close-icon {
+        display: none;
+    }
+    .close-btn.open .burger-icon {
+        display: none;
+    }
+    .close-btn.open .close-icon {
+        display: inline;
+    }
+    .tooltip-text .tooltip-text-content {
+        font-weight: bold;
+    }
+    .tooltip-text .tooltip-sub-text-text {
+        font-style: italic;
+        font-size: 11px;
+    }
+
+    /* Home tooltip FTE — icon + layout overrides */
+    .fab-home-tooltip {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 183px;
+        border-radius: 8px;
+        padding: 6px 8px 8px 12px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.08), 0px 1px 2px rgba(0,0,0,0.04), 0px 0px 1px rgba(0,0,0,0.08), 0px 3px 5px rgba(116,23,208,0.07);
+    }
+    .fab-home-tooltip .tooltip-text-content {
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #292929;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 145px;
+    }
+    .fab-home-tooltip-icon {
+        flex-shrink: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Icon container styles - replaces iframe */
+    .icon-container {
+        width: 33px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: grab;
+        pointer-events: all;
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .icon-container:active {
+        cursor: grabbing;
+    }
+
+    .fab-svg-icon {
+        width: 22px;
+        height: 22px;
+        padding: 5px 5px 5px 6px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+
+    .draggable-handle {
+        display: none;
+        position: absolute;
+        right: var(--drag-handle-right, 12px);
+        cursor: grab;
+    }
+    .draggable-handle-visible {
+        display: flex;
+    }
+
+    /* Font face declarations - for proper font loading in Shadow DOM */
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 400;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 700;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Regular';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Bold';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    body {
+        font-family: 'AdobeClean-Regular', adobe-clean, "Adobe Clean", sans-serif;
+    }
+
+    .dialog-container {
+        width: 166px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #B1B1B1;
+        box-shadow: 0px 1px 4px 0px #00000026;
+        z-index: 1000;
+        padding: 4px;
+        position: relative;
+        margin: 4px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu .menu_item {
+        cursor: pointer;
+        font-family: 'AdobeClean-Regular', adobe-clean, "Adobe Clean", sans-serif;
+        align-content: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #222222;
+        padding: 0px 12px;
+        height: 32px;
+        width: 140px;
+    }
+
+    .menu .menu_item:hover {
+        background-color: #eaeaea;
+    }
+
+    .preferences {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #464646;
+    }
+
+    .divider {
+        border-top: 1px solid #E6E6E6;
+    }
+
+    /* React-specific wrappers - minimal */
+    .fab-root {
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        /* FAB is UI chrome, not page content — exclude from host page select-all/copy */
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    button.close-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10; /* Ensure clickable above all other elements */
+        pointer-events: auto;
+    }
+
+    /* FAB Action Pills - From Figma Design */
+    .fab-pills-container {
+        position: absolute;
+        bottom: 42px; /* FAB height (34px) + gap (8px) = 42px */
+        right: var(--fab-margin-right, 28px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+        width: 142px;
+        z-index: 1;
+    }
+
+    .fab-pills-container.pills-below {
+        bottom: auto;
+        top: 42px; /* Same gap when positioned below */
+    }
+
+    /* Nudge variant (challenger) — all pills take dynamic width instead of fixed 142px */
+    .fab-pills-container.nudge-variant .fab-pill-button {
+        width: auto;
+    }
+
+    .fab-pills-container.nudge-variant .fab-pill-label {
+        white-space: nowrap;
+    }
+
+    /* Extend hover area using ::after pseudo-element - doesn't affect visual layout */
+    .fab-pills-container::after {
+        content: '';
+        position: absolute;
+        top: 100%; /* Start right after the pills content */
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: transparent;
+        pointer-events: auto;
+    }
+
+    .fab-pills-container.pills-below::after {
+        top: auto;
+        bottom: 100%; /* Start right before the pills when positioned below */
+    }
+
+    /* FTE Header - First Time Experience (56px with close button) */
+    .fab-fte-header {
+        position: relative;
+        width: 142px;
+        min-height: 56px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .fab-fte-background {
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 183.33px;
+        height: 126.82px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-fte-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        color: #222222;
+        padding: 0;
+    }
+
+    .fab-fte-close:hover {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+    }
+
+    .fab-fte-close svg {
+        width: 8px;
+        height: 8px;
+    }
+
+    .fab-fte-text {
+        position: relative;
+        width: 102px;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 16px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-left: 16px;
+        margin-right: auto;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Hover Header - Normal state (24px without close button) */
+    .fab-hover-header {
+        position: relative;
+        width: 142px;
+        min-height: 24px;
+        background: #FFFFFF; /* White background to show the colorful SVG and text */
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .fab-hover-background {
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 212.63px;
+        height: 147.09px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-hover-text {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        padding: 4px 9px;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Individual Pill Buttons */
+    .fab-pill-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 142px;
+        min-height: 24px; /* Min height, allows growth with content */
+        background: #FFFFFF;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.2s ease;
+        overflow: visible;
+    }
+
+   .fab-pill-contextual-ring-wrapper {
+        position: relative;
+        display: inline-block;
+        padding: 1px;
+        border-radius: 13px;
+        overflow: hidden;
+    }
+
+    .fab-pill-contextual-ring-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        z-index: -1;
+        background: conic-gradient(from 180deg at 50% 50%,
+            #7155FA 0deg,
+            #7155FA 54deg,
+            #D92361 108deg,
+            #D73220 180deg,
+            #FFFFFF 180deg,
+            #FFFFFF 360deg);
+        animation: fab-contextual-pill-ring-rotate 3s linear infinite;
+    }
+
+    @keyframes fab-contextual-pill-ring-rotate {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .fab-pill-button:hover {
+        background: #D5D5D5;
+    }
+
+    .fab-pill-button:hover .fab-pill-label,
+    .fab-pill-button:hover .fab-pill-icon {
+        color: #000000; /* Hover state color from Figma Alias/content/neutral/hover */
+    }
+
+    .fab-pill-button:active {
+        background: #F4F4F4;
+    }
+
+    .fab-pill-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 7px 4px 10px; /* Exact Figma specs: top right bottom left */
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+
+    .fab-pill-icon img {
+        width: 16px;
+        height: 16px;
+        display: block;
+        flex-shrink: 0;
+        /* SVG icons with currentColor fill will inherit color from parent */
+        filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(196deg) brightness(97%) contrast(97%); /* #222222 */
+    }
+
+    .fab-pill-button:hover .fab-pill-icon img {
+        filter: brightness(0) saturate(100%); /* #000000 on hover */
+    }
+
+    .fab-pill-label {
+        display: flex;
+        align-items: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px; /* 1.252 * 12px = 15.024px */
+        color: #222222; /* Default text color from Figma Alias/content/neutral/default */
+        padding: 4px 9px 5px 0; /* Reduced right padding to prevent wrapping */
+        text-align: left;
+        white-space: normal; /* Allow text wrapping for multi-line content */
+        box-sizing: border-box;
+        flex: 1;
+        overflow: visible;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+</style></template></div></html>
